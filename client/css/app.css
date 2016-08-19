@@ -9,4 +9,19 @@ grey: #58595B
 
 body {
   background-color: #021725;
+  color: #fff
+}
+
+.volume {
+  top: 0;
+  right: 0;
+  position: fixed;
+  font-size: 40px;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.volume:hover {
+  opacity: 0.9;
 }
