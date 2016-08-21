@@ -6,22 +6,43 @@ darkblue: #021725
 purple: #EC297B
 grey: #58595B
 */
-
+html, body{
+  height: 100%;
+  min-height: 100%;
+}
+html {
+  background: #021725;
+  font-family: TheSaB5,'Trebuchet MS',Arial,Helvetica,sans-serif!important;
+}
 body {
-  background-color: #021725;
   color: #fff
+  height: 100%;
+  min-height: 100%;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.volume {
-  top: 0;
-  right: 0;
-  position: fixed;
-  font-size: 40px;
-  cursor: pointer;
-  margin-top: 20px;
-  margin-right: 20px;
+
+
+.mfb-component__main-icon--active, .mfb-component__main-icon--resting {
+    font-size: 26px !important;
 }
 
-.volume:hover {
-  opacity: 0.9;
+.mfb-component__button--child, .mfb-component__button--main {
+    background-color: #00AD4D;
+    border-radius: 50%;
+    border: 6px rgba(88,89,91,0.3) solid;
+}
+
+.mfb-component--bl *, .mfb-component--bl :after,
+.mfb-component--bl :before, .mfb-component--br *,
+.mfb-component--br :after, .mfb-component--br :before,
+.mfb-component--tl *, .mfb-component--tl :after,
+.mfb-component--tl :before, .mfb-component--tr *,
+.mfb-component--tr :after, .mfb-component--tr :before {
+    line-height: 44px;
 }

@@ -5,7 +5,7 @@
     // Main
     initHeader();
     initAnimation();
-    addListeners();
+    //addListeners();
 
     function initHeader() {
         width = window.innerWidth;
@@ -22,10 +22,10 @@
 
         // create points
         points = [];
-        for(var x = 0; x < width; x = x + width/20) {
-            for(var y = 0; y < height; y = y + height/20) {
-                var px = x + Math.random()*width/20;
-                var py = y + Math.random()*height/20;
+        for(var x = 0; x < width; x = x + width/12) {
+            for(var y = 0; y < height; y = y + height/12) {
+                var px = x + Math.random()*width/12;
+                var py = y + Math.random()*height/12;
                 var p = {x: px, originX: px, y: py, originY: py };
                 points.push(p);
             }
@@ -63,7 +63,7 @@
 
         // assign a circle to each point
         for(var i in points) {
-            var c = new Circle(points[i], 2+Math.random()*2, 'rgba(255,255,255,0.3)');
+            var c = new Circle(points[i], 2+Math.random()*2, 'rgba(255,255,255,0.6)');
             points[i].circle = c;
         }
     }
@@ -119,13 +119,13 @@
                 // detect points in range
                 if(Math.abs(getDistance(target, points[i])) < 4000) {
                     points[i].active = 0.3;
-                    points[i].circle.active = 0.6;
-                } else if(Math.abs(getDistance(target, points[i])) < 20000) {
+                    points[i].circle.active = 0.4;
+                } else if(Math.abs(getDistance(target, points[i])) < 1120000) {
                     points[i].active = 0.1;
-                    points[i].circle.active = 0.3;
-                } else if(Math.abs(getDistance(target, points[i])) < 40000) {
+                    points[i].circle.active = 0.2;
+                } else if(Math.abs(getDistance(target, points[i])) < 1140000) {
                     points[i].active = 0.02;
-                    points[i].circle.active = 0.1;
+                    points[i].circle.active = 0.05;
                 } else {
                     points[i].active = 0;
                     points[i].circle.active = 0;
@@ -153,7 +153,7 @@
             ctx.beginPath();
             ctx.moveTo(p.x, p.y);
             ctx.lineTo(p.closest[i].x, p.closest[i].y);
-            ctx.strokeStyle = 'rgba(156,217,249,'+ p.active+')';
+            ctx.strokeStyle = 'rgba(25,217,249,'+ p.active+')';
             ctx.stroke();
         }
     }
