@@ -1,9 +1,9 @@
 app.ViewModel = function() {
   var vm = this;
-  vm.openProfil = function(){
+  vm.openProfil = function() {
     $('.popup-profil').fadeIn()
   }
-  vm.closeProfil = function(){
+  vm.closeProfil = function() {
     $('.popup-profil').fadeOut()
   }
 };
