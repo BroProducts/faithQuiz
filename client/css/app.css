@@ -24,6 +24,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;
+  cursor: default;
 }
 
 .menu-container {
@@ -36,21 +43,22 @@ body {
 .menu-btn {
   background-color: rgba(88,89,91,0.2);
   font-size: 22px;
-  padding: 5px;
+  padding: 5px 10px;
   margin: 10px;
   border: 1px #58595B solid;
 }
 
 .menu-btn:hover {
   cursor: pointer;
-  opacity: 0.8;
 }
 
 .game-title {
   position: absolute;
-  top: calc(50% - 23px);
+  top: calc(50% - 33px);
   left: 0;
   width: 100%;
   font-size: 39px;
   text-align: center;
+  padding: 10px 0;
+  background-color: rgba(88,89,91,0.1);
 }
