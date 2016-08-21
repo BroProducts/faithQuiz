@@ -15,7 +15,7 @@ html {
   font-family: TheSaB5,'Trebuchet MS',Arial,Helvetica,sans-serif!important;
 }
 body {
-  color: #fff
+  color: #fff;
   height: 100%;
   min-height: 100%;
   display: -webkit-flex;
@@ -26,23 +26,22 @@ body {
   justify-content: center;
 }
 
-
-
-.mfb-component__main-icon--active, .mfb-component__main-icon--resting {
-    font-size: 26px !important;
+.menu-container {
+  bottom: 25px;
+  left: 25px;
+  position: absolute;
+  box-sizing: border-box;
 }
 
-.mfb-component__button--child, .mfb-component__button--main {
-    background-color: #00AD4D;
-    border-radius: 50%;
-    border: 6px rgba(88,89,91,0.3) solid;
+.menu-btn {
+  background-color: rgba(88,89,91,0.2);
+  font-size: 22px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px #58595B solid;
 }
 
-.mfb-component--bl *, .mfb-component--bl :after,
-.mfb-component--bl :before, .mfb-component--br *,
-.mfb-component--br :after, .mfb-component--br :before,
-.mfb-component--tl *, .mfb-component--tl :after,
-.mfb-component--tl :before, .mfb-component--tr *,
-.mfb-component--tr :after, .mfb-component--tr :before {
-    line-height: 44px;
+.menu-btn:hover {
+  cursor: pointer;
+  opacity: 0.8;
 }
