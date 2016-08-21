@@ -34,7 +34,7 @@
     <div class="game-title">Faith Game</div>
 
     <div class="menu-container">
-      <div class="menu-btn">Profil</div>
+      <div class="menu-btn" data-bind="click: openProfil">Profil</div>
       <div class="menu-btn">Singleplayer</div>
       <div class="menu-btn">Multiplayer</div>
     </div>
@@ -46,6 +46,14 @@
   <div class="view profil">
   </div>
 </div>
+
+<div class="popup popup-profil">
+  <div class="popup-close-btn" data-bind="click: closeProfil">
+    <i class="ion-android-close"></i>
+  </div>
+</div>
+
+<img id="thing" src="//www.kirupa.com/images/smiley_red.png">
 
 
 <!-- JavaScript Vendor -->

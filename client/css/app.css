@@ -62,3 +62,31 @@ body {
   padding: 10px 0;
   background-color: rgba(88,89,91,0.1);
 }
+
+.popup{
+  display: none;
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: #021725; /* Fallback color */
+}
+
+.popup-close-btn{
+  top: 10;
+  right: 10;
+  box-sizing: border-box;
+  color: white;
+  position: absolute;
+  font-size: 30px;
+  padding-top: 4px;
+  background: #0081B4;
+  width: 46px;
+  height: 46px;
+  text-align: center;
+  border-radius: 50%;
+  border: 4px rgba(88,89,91,0.4) solid;
+}
