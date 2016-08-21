@@ -83,7 +83,7 @@ body {
   position: absolute;
   font-size: 30px;
   padding-top: 4px;
-  background: #0081B4;
+  background: rgba(0,129,180,0.2);
   width: 46px;
   height: 46px;
   text-align: center;
@@ -101,9 +101,10 @@ body {
   transform: scale(0);
   position: fixed;
   opacity: 1;
+  z-index: 1000;
 }
 .rippleEffect {
-    animation: rippleDrop .9s linear;
+    animation: rippleDrop .3s cubic-bezier(0.33, 0.84, 0.72, 0.31);
 }
 
 @keyframes rippleDrop {
