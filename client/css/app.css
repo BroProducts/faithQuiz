@@ -45,3 +45,12 @@ body {
   cursor: pointer;
   opacity: 0.8;
 }
+
+.game-title {
+  position: absolute;
+  top: calc(50% - 23px);
+  left: 0;
+  width: 100%;
+  font-size: 39px;
+  text-align: center;
+}
