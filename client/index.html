@@ -19,14 +19,6 @@
 </head>
 <body>
 
-<!-- Show if music on -->
-<div class="volume" data-bind="ifnot: musicMuted(), click: toggleMusic">
-  <i class="ion-android-volume-up"></i>
-</div>
-<!-- Show if music off -->
-<div class="volume" data-bind="if: musicMuted(), click: toggleMusic">
-  <i class="ion-android-volume-off"></i>
-</div>
 <div class="container-animation">
 	<div class="content">
 		<div id="large-header" class="large-header">
@@ -49,10 +41,5 @@
 <script type="text/javascript" src="js/vendor/EasePack.min.js"></script>
 <script type="text/javascript" src="js/vendor/rAF.js"></script>
 <script type="text/javascript" src="js/backgroundanimation.js"></script>
-
-<!-- Audio -->
-<audio autoplay loop id="audio-relax">
-  <source src="audio/WeShouldHangOut.mp3" type="audio/mpeg">
-</audio>
 </body>
 </html>
