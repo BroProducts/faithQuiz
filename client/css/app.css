@@ -169,6 +169,17 @@ body {
     cursor: pointer;
 }
 
+.profil-username {
+    position: absolute;
+    font-size: 24px;
+    width: 60%;
+    text-align: center;
+    margin: 0 20% 0 20%;
+    border-top: 1px white solid;
+    border-bottom: 1px white solid;
+    margin-top: 28px;
+}
+
 
 /*  Ripple */
 
