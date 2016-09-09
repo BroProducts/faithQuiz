@@ -6,7 +6,7 @@ $(function() {
 });
 
 $(document).ready(function(){
-  app.vm = new app.ViewModel()
+  app.vm = new app.ViewModelMain()
   console.log(ko.toJS(app.vm))
   ko.applyBindings(app.vm);
   app.hidePreloader()

@@ -1,4 +1,4 @@
-app.ViewModel = function() {
+app.ViewModelMain = function() {
   var vm = this;
   vm.closePopup = function() {
     $('.popup').fadeOut()
