@@ -40,9 +40,9 @@
             <div class="game-title">Faith Game</div>
 
             <div class="menu-container">
-                <div class="menu-btn" data-bind="click: openProfil">Profil</div>
-                <div class="menu-btn" data-bind="click: openSingleplayer">Singleplayer</div>
-                <div class="menu-btn" data-bind="click: openMultiplayer">Multiplayer</div>
+                <div class="menu-btn clickable" data-bind="click: openProfil">Profil</div>
+                <div class="menu-btn clickable" data-bind="click: openSingleplayer">Singleplayer</div>
+                <div class="menu-btn clickable" data-bind="click: openMultiplayer">Multiplayer</div>
             </div>
         </div>
         <div class="view view-multiplayer">
@@ -53,19 +53,24 @@
     </div>
 
     <div class="popup popup-profil">
-        <div class="popup-title">Username</div>
-        <div class="popup-close-btn" data-bind="click: closePopup">
+        <div class="popup-title">Gast</div>
+        <div class="popup-close-btn clickable" data-bind="click: closePopup">
             <i class="ion-android-close"></i>
         </div>
     </div>
 
     <div class="popup popup-singleplayer">
         <div class="popup-title">Singleplayer</div>
-        <div class="popup-close-btn" data-bind="click: closePopup">
+        <div class="popup-close-btn clickable" data-bind="click: closePopup">
             <i class="ion-android-close"></i>
         </div>
         <div class="game-singleplayer">
-
+          <div class="game-singleplayer-question">Was würdest du zwischen dem scheiss hier wählen?</div>
+          <div class="game-singleplayer-answers">
+          <div class="game-singleplayer-answer clickable">Harry poter und the swag</div>
+          <div class="game-singleplayer-answer clickable">Harry poterger gr und theaghrth</div>
+            <div class="game-singleplayer-answer answer-advertisement">advertisement right here</div>
+          </div>
         </div>
         <div class="score-singleplayer">Score: <span data-bind="text: singlePlayer.currentScore">0</span></div>
     </div>

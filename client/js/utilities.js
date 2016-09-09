@@ -6,6 +6,11 @@ app.hidePreloader = function () {
   $('.preloader').fadeOut()
 }
 
+$(document).on('click', '.clickable', function(el) {
+  $('.clickEffect').removeClass('clickEffect')
+  $(this).addClass('clickEffect')
+})
+
 //Touch Ripple Feedback
 $('body').click(function (e) {
   // Remove any old one
