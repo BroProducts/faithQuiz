@@ -36,26 +36,38 @@
     </div>
 
     <div class="views">
-        <div class="view main-view">
+        <div class="view view-main">
             <div class="game-title">Faith Game</div>
 
             <div class="menu-container">
                 <div class="menu-btn" data-bind="click: openProfil">Profil</div>
-                <div class="menu-btn">Singleplayer</div>
+                <div class="menu-btn" data-bind="click: openSingleplayer">Singleplayer</div>
                 <div class="menu-btn" data-bind="click: openMultiplayer">Multiplayer</div>
             </div>
         </div>
-        <div class="view multiplayer">
+        <div class="view view-multiplayer">
         </div>
-        <div class="view singleplayer">
+        <div class="view view-singleplayer">
+          <span data-bind="text: singlePlayer.currentScore">0</span>
         </div>
     </div>
 
     <div class="popup popup-profil">
-        <div class="popup-close-btn" data-bind="click: closeProfil">
+        <div class="popup-title">Username</div>
+        <div class="popup-close-btn" data-bind="click: closePopup">
             <i class="ion-android-close"></i>
         </div>
-        <div class="profil-username">Username</div>
+    </div>
+
+    <div class="popup popup-singleplayer">
+        <div class="popup-title">Singleplayer</div>
+        <div class="popup-close-btn" data-bind="click: closePopup">
+            <i class="ion-android-close"></i>
+        </div>
+        <div class="game-singleplayer">
+
+        </div>
+        <div class="score-singleplayer">Score: <span data-bind="text: singlePlayer.currentScore">0</span></div>
     </div>
 
     <!-- JavaScript Vendor -->
@@ -67,6 +79,7 @@
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/utilities.js"></script>
     <script type="text/javascript" src="js/classes/viewModel.js"></script>
+    <script type="text/javascript" src="js/classes/ViewModelSinglePlayer.js"></script>
 
     <!-- JavaScript for Backgroundanimation -->
     <script type="text/javascript" src="js/vendor/TweenLite.min.js"></script>

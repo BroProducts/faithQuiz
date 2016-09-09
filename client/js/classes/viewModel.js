@@ -1,21 +1,16 @@
 app.ViewModel = function() {
   var vm = this;
+  vm.closePopup = function() {
+    $('.popup').fadeOut()
+  }
   vm.openProfil = function() {
     $('.popup-profil').fadeIn()
   }
-  vm.closeProfil = function() {
-    $('.popup-profil').fadeOut()
-  }
   vm.openSingleplayer = function() {
-    console.log('openSingleplayer')
-  }
-  vm.closeSingleplayer = function() {
-    console.log('closeSingleplayer')
+    $('.popup-singleplayer').fadeIn()
   }
   vm.openMultiplayer = function() {
     console.log('openMultiplayer')
   }
-  vm.closeMultiplayer = function() {
-    console.log('closeMultiplayer')
-  }
+  vm.singlePlayer = new app.ViewModelSinglePlayer()
 };
