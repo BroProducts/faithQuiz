@@ -8,8 +8,8 @@
     //addListeners();
 
     function initHeader() {
-        width = window.innerWidth;
-        height = window.innerHeight;
+        width = $('.app-wrapper').innerWidth();
+        height = $('.app-wrapper').innerHeight();
         target = {x: width/2, y: height/2};
 
         largeHeader = document.getElementById('large-header');

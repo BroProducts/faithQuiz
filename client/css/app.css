@@ -39,6 +39,32 @@ body {
     -ms-user-select: none;
     user-select: none;
     cursor: default;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0081b4+18,0081b4+18,00ad4d+100 */
+    background: #0081b4;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #0081b4 18%, #0081b4 18%, #00ad4d 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #0081b4 18%, #0081b4 18%, #00ad4d 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #0081b4 18%, #0081b4 18%, #00ad4d 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0081b4', endColorstr='#00ad4d', GradientType=0);
+    /* IE6-9 */
+}
+
+.app-wrapper {
+    position: absolute;
+    width: 375px;
+    height: 668px;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .06), 0 2px 5px 0 rgba(0, 0, 0, .2);
+    background: #021725;
+}
+
+.container-animation {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 .view {
@@ -115,7 +141,8 @@ body {
     height: 100%;
     width: 100%;
     background: rgba(0, 0, 0, .7);
-    position: fixed;
+    position: absolute;
+    ;
 }
 
 .menu-container {
@@ -150,7 +177,8 @@ body {
 
 .popup {
     display: none;
-    position: fixed;
+    position: absolute;
+    ;
     z-index: 1;
     left: 0;
     top: 0;
@@ -241,6 +269,13 @@ body {
     font-size: 30px;
 }
 
+.singleplayer-game-over {
+    width: 100%;
+    margin-top: 47px;
+    text-align: center;
+    font-size: 51px;
+}
+
 .game-singleplayer-question {
     margin: 10px;
     margin-top: 30px;
@@ -273,14 +308,14 @@ body {
 }
 
 .btn-start-game {
-  position: absolute;
-  box-sizing: border-box;
-  background-color: rgba(88, 89, 91, 0.2);
-  font-size: 30px;
-  padding: 5px 10px;
-  margin-top: 10px;
-  border: 1px #58595B solid;
-  width: 174px;
-  margin-left: calc(50% - 87px);
-  bottom: 60px;
+    position: absolute;
+    box-sizing: border-box;
+    background-color: rgba(88, 89, 91, 0.2);
+    font-size: 30px;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border: 1px #58595B solid;
+    width: 174px;
+    margin-left: calc(50% - 87px);
+    bottom: 60px;
 }

@@ -6,6 +6,13 @@ app.hidePreloader = function () {
   $('.preloader').fadeOut()
 }
 
+app.showPreloaderFast = function () {
+  $('.preloader').show()
+}
+app.hidePreloaderFast = function () {
+  $('.preloader').hide()
+}
+
 $(document).on('click', '.clickable', function(el) {
   $('.clickEffect').removeClass('clickEffect')
   $(this).addClass('clickEffect')
