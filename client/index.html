@@ -48,7 +48,7 @@
         <div class="view view-multiplayer">
         </div>
         <div class="view view-singleplayer">
-          <span data-bind="text: singlePlayer.currentScore">0</span>
+            <span data-bind="text: singlePlayer.currentScore">0</span>
         </div>
     </div>
 
@@ -65,16 +65,24 @@
             <i class="ion-android-close"></i>
         </div>
         <div class="game-singleplayer">
-          <div class="game-singleplayer-question">Was würdest du zwischen dem scheiss hier wählen?</div>
-          <div class="game-singleplayer-answers">
-          <div class="game-singleplayer-answer clickable">Harry poter und the swag</div>
-          <div class="game-singleplayer-answer clickable">Harry poterger gr und theaghrth</div>
-            <div class="game-singleplayer-answer answer-advertisement">advertisement right here</div>
-          </div>
+            <!-- ko if: singlePlayer.gameStartet() == true -->
+            <!-- ko if: singlePlayer.activeQuestion() != undefined -->
+            <div class="game-singleplayer-question" data-bind="text: singlePlayer.activeQuestion().questionText">Question?</div>
+            <div class="game-singleplayer-answers">
+                <!-- ko foreach: singlePlayer.activeQuestion().answers -->
+                <div class="game-singleplayer-answer clickable">Answer!</div>
+                <!-- /ko -->
+                <div class="game-singleplayer-answer answer-advertisement">advertisement right here</div>
+            </div>
+            <!-- /ko -->
+            <!-- /ko -->
+
+            <!-- ko if: singlePlayer.gameStartet() == false -->
+            <div class="btn-start-game clickable" data-bind="click: singlePlayer.start">Start Game</div>
+            <!-- /ko -->
         </div>
         <div class="score-singleplayer">Score: <span data-bind="text: singlePlayer.currentScore">0</span></div>
     </div>
-
     <!-- JavaScript Vendor -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
@@ -84,7 +92,9 @@
     <script type="text/javascript" src="js/app.js"></script>
     <script type="text/javascript" src="js/utilities.js"></script>
     <script type="text/javascript" src="js/classes/viewModel.js"></script>
-    <script type="text/javascript" src="js/classes/ViewModelSinglePlayer.js"></script>
+    <script type="text/javascript" src="js/classes/viewModelSinglePlayer.js"></script>
+    <script type="text/javascript" src="js/classes/question.js"></script>
+    <script type="text/javascript" src="js/classes/answer.js"></script>
 
     <!-- JavaScript for Backgroundanimation -->
     <script type="text/javascript" src="js/vendor/TweenLite.min.js"></script>

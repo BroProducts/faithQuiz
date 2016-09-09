@@ -220,7 +220,7 @@ body {
 
 @keyframes clickEffectOpacity {
     0% {
-      opacity: 0.5;
+        opacity: 0.5;
     }
     100% {
         opacity: 1;
@@ -264,11 +264,23 @@ body {
 }
 
 .game-singleplayer-answer:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
 
-.answer-advertisement{
-  height: 100px;
-
+.answer-advertisement {
+    height: 100px;
     background: #1778cd;
+}
+
+.btn-start-game {
+  position: absolute;
+  box-sizing: border-box;
+  background-color: rgba(88, 89, 91, 0.2);
+  font-size: 30px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border: 1px #58595B solid;
+  width: 174px;
+  margin-left: calc(50% - 87px);
+  bottom: 60px;
 }
