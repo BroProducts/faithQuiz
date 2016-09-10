@@ -327,4 +327,5 @@ body {
     width: 174px;
     margin-left: calc(50% - 87px);
     bottom: 60px;
+    cursor: pointer;
 }
