@@ -13,9 +13,13 @@ app.ViewModelSinglePlayer = function() {
 
     vm.getQuestion = function() {
         app.showPreloaderFast();
+        var question = {
+          id: 1,
+          questionText: 'I\'ve got a question for ya!'
+        }
         var questionOptions = {};
-        questionOptions.questionText = 'Question text swag swagf awogorgh serigus eriugbseipr gh';
-        var question = new app.Question(1, questionOptions);
+        questionOptions.questionText = question.questionText;
+        var question = new app.Question(question.id, questionOptions);
         vm.activeQuestion(question);
         var answers = [{
             id: 1,
