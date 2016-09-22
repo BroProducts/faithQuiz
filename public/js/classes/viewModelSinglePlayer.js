@@ -12,14 +12,24 @@ app.ViewModelSinglePlayer = function() {
     };
 
     vm.getQuestion = function() {
+        //get messages
+        questionService.find({
+            query: {
+            $sort: { createdAt: -1 },
+            $limit: 25
+            }
+        }).then(function (page) {
+            return console.log(page.data.reverse())
+        });
+
         app.showPreloaderFast();
-        var question = {
-          id: 1,
-          questionText: 'I\'ve got a question for ya!'
-        }
+
+        var question = [{id: 1, questionText: 'I\'ve got a question for ya111!'}, {id: 1, questionText: 'I\'ve got a question for ya2222!'}, {id: 1, questionText: 'I\'ve got a question for ya3333!'}];
+        var xxx = Math.floor((Math.random() * 3) + 1) - 1;
+
         var questionOptions = {};
-        questionOptions.questionText = question.questionText;
-        var question = new app.Question(question.id, questionOptions);
+        questionOptions.questionText = question[xxx].questionText;
+        var question = new app.Question(question[xxx].id, questionOptions);
         vm.activeQuestion(question);
         var answers = [{
             id: 1,
