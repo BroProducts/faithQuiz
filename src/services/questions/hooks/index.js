@@ -1,5 +1,7 @@
 'use strict';
 
+const questionhook = require('./questionhook');
+
 const globalHooks = require('../../../hooks');
 const auth = require('feathers-authentication').hooks;
 
@@ -19,7 +21,7 @@ exports.before = {
 
 exports.after = {
   all: [],
-  find: [],
+  find: [questionhook],
   get: [],
   create: [],
   update: [],

@@ -13,41 +13,42 @@ app.ViewModelSinglePlayer = function() {
 
     vm.getQuestion = function() {
         //get messages
-        questionService.find({
+        var result = questionService.find({
             query: {
             $sort: { createdAt: -1 },
-            $limit: 25
+            $limit: 1000
             }
         }).then(function (page) {
-            return console.log(page.data.reverse())
+            
+            app.showPreloaderFast();
+
+            var question = {id: 1, questionText: page.question};
+
+            var questionOptions = {};
+            questionOptions.questionText = question.questionText;
+            var question = new app.Question(question.id, questionOptions);
+            vm.activeQuestion(question);
+            var answers = [{
+                id: 1,
+                answerText: 'answer 1 text sag awg',
+                answerCount: 22353
+            }, {
+                id: 2,
+                answerText: 'answer 2 text ehsrh rth wg',
+                answerCount: 243457
+            }];
+            for (var i = 0; i < answers.length; i++) {
+                var answerOptions = {};
+                answerOptions.answerText = answers[i].answerText;
+                answerOptions.answerCount = answers[i].answerCount;
+                var answer = new app.Answer(answers[i].id, answerOptions);
+                vm.activeQuestion().answers.push(answer);
+            };
+            app.hidePreloaderFast();
+
         });
 
-        app.showPreloaderFast();
-
-        var question = [{id: 1, questionText: 'I\'ve got a question for ya111!'}, {id: 1, questionText: 'I\'ve got a question for ya2222!'}, {id: 1, questionText: 'I\'ve got a question for ya3333!'}];
-        var xxx = Math.floor((Math.random() * 3) + 1) - 1;
-
-        var questionOptions = {};
-        questionOptions.questionText = question[xxx].questionText;
-        var question = new app.Question(question[xxx].id, questionOptions);
-        vm.activeQuestion(question);
-        var answers = [{
-            id: 1,
-            answerText: 'answer 1 text sag awg',
-            answerCount: 22353
-        }, {
-            id: 2,
-            answerText: 'answer 2 text ehsrh rth wg',
-            answerCount: 243457
-        }];
-        for (var i = 0; i < answers.length; i++) {
-            var answerOptions = {};
-            answerOptions.answerText = answers[i].answerText;
-            answerOptions.answerCount = answers[i].answerCount;
-            var answer = new app.Answer(answers[i].id, answerOptions);
-            vm.activeQuestion().answers.push(answer);
-        };
-        app.hidePreloaderFast();
+        
     };
     vm.answerQuestion = function() {
         app.showPreloaderFast();
