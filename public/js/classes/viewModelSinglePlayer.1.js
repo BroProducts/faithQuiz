@@ -12,27 +12,17 @@ app.ViewModelSinglePlayer = function() {
     };
 
     vm.getQuestion = function() {
-        console.log(app.get('user')._id)
-
-        
         //get messages
-        sessionService.create({
-            userid: app.get('user')._id
+        questionService.find({
+            query: {
+            $sort: { createdAt: -1 },
+            $limit: 1000
+            }
         }).then(function (page) {
             
-            const query = {
-                paginate: false,
-                query: {
-                    userid: app.get('user')._id
-                },
-                $sort: { createdAt: -1 }
-            }
-           sessionService.find(query).then(function (page) {
-
-            console.log(page)
             app.showPreloaderFast();
 
-            var question = { questionText: page.question};
+            var question = {id: page.id, questionText: page.question};
 
             var questionOptions = {};
             questionOptions.questionText = question.questionText;
@@ -52,40 +42,39 @@ app.ViewModelSinglePlayer = function() {
                 vm.activeQuestion().answers.push(answer);
             };
             app.hidePreloaderFast();
-            
+
         });
-        });
+
         
     };
-    
     vm.answerQuestion = function() {
+        app.showPreloaderFast();
         var answer = this;
-        const query = {
-            paginate: false,
-            query: {
-                $or: [
-                    { userid: app.get('user')._id },
-                    { userid: answer.id }
-                ]
-            },
-            $sort: { createdAt: -1 }
-        }
-        sessionService.find(query).then(function (page) {
-            console.log(page)
-            app.showPreloaderFast();
-            
-            
-            var answerCorrect = page;
+        console.log(answer)
+        var answerCorrect = false;
 
-                vm.activeQuestion(undefined)
-                if (answerCorrect) {
-                    vm.nextQuestion();
-                } else {
-                    vm.lose();
-                };
-                app.hidePreloaderFast();
+        leaderboardService.create({
+            questionid: app.vm.singlePlayer.activeQuestion().id,
+            answer: answer.id
+        }).then(function (page) {
+            answerCorrect = true
 
-        });
+
+        // for (var i = 0; i < vm.activeQuestion().answers().length; i++) {
+        //     if (answer.answerCount < vm.activeQuestion().answers()[i].answerCount) {
+        //         answerCorrect = false;
+        //     } else {
+        //         answerCorrect = true
+        //     };
+        // };
+        vm.activeQuestion(undefined)
+        if (answerCorrect) {
+            vm.nextQuestion();
+        } else {
+            vm.lose();
+        };
+        app.hidePreloaderFast();
+        })
     };
     vm.nextQuestion = function() {
         vm.currentScore(vm.currentScore() + 1);

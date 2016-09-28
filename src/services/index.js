@@ -1,5 +1,6 @@
 'use strict';
-const questions = require('./questions');
+const sessions = require('./sessions');
+const leaderboard = require('./leaderboard');
 const authentication = require('./authentication');
 const user = require('./user');
 
@@ -9,5 +10,6 @@ module.exports = function() {
 
   app.configure(authentication);
   app.configure(user);
-  app.configure(questions);
+  app.configure(leaderboard);
+  app.configure(sessions);
 };

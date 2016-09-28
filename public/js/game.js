@@ -22,8 +22,8 @@ app.version = '0.0.1'
 
 // Get the Feathers services we want to use
 var userService = app.service('users');
-var questionService = app.service('questions');
-
+var leaderboardService = app.service('leaderboards');
+var sessionService = app.service('sessions');
 //authenticate the user
 app.authenticate().then(function () {
   //Document ready and authenticated
@@ -32,18 +32,6 @@ app.authenticate().then(function () {
   ko.applyBindings(app.vm);
   app.hidePreloader()
   $('.view-main').fadeIn()
-  
-  //questionService.create({ question: 'who are you?', answer1: 'me', answer2: 'you', answer1perc: 80, answer2perc: 20});
-
-  // questionService.find({
-  //   query: {
-  //     $sort: { createdAt: -1 },
-  //     $limit: 50,
-  //     $skip: 2
-  //   }
-  // }).then(function (page) {
-  //   return console.log(page)
-  // });
 
 })
 // On unauthorized errors we just redirect back to the login page

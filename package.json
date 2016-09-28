@@ -1,15 +1,14 @@
 {
   "name": "faithgame",
   "description": "quizgame",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "homepage": "",
   "main": "src/",
   "keywords": [
     "feathers"
   ],
-  "license": "MIT",
   "repository": {},
-  "author": {},
+  "author": "RH, JV",
   "contributors": [],
   "bugs": {},
   "engines": {
@@ -19,7 +18,8 @@
     "test": "npm run jshint && npm run mocha",
     "jshint": "jshint src/. test/. --config",
     "start": "node src/",
-    "mocha": "mocha test/ --recursive"
+    "mocha": "mocha test/ --recursive",
+    "nodemon": "nodemon src/"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
@@ -30,9 +30,12 @@
     "feathers-configuration": "^0.3.3",
     "feathers-errors": "^2.4.0",
     "feathers-hooks": "^1.5.7",
+    "feathers-mongodb": "^2.5.1",
     "feathers-nedb": "^2.5.1",
     "feathers-rest": "^1.5.0",
     "feathers-socketio": "^1.4.1",
+    "mongodb": "^2.2.10",
+    "mongoose": "^4.6.1",
     "nedb": "^1.8.0",
     "passport": "^0.3.2",
     "serve-favicon": "^2.3.0",
