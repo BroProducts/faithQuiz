@@ -10,23 +10,21 @@ module.exports = function(){
 
   MongoClient.connect('mongodb://localhost:27017/faithgame').then(function(db){
   // Connect to the db, create and register a Feathers service.
-  app.use('/users', service({
-    Model: db.collection('users'),
+  app.use('/leaderboards', service({
+    Model: db.collection('leaderboards'),
     paginate: {
       default: 5,
       max: 25
     }
   }));
-  
 
   // Get our initialize service to that we can bind hooks
-  const userService = app.service('/users');
+  const leaderboardService = app.service('/leaderboards');
 
   // Set up our before hooks
-  userService.before(hooks.before);
+  leaderboardService.before(hooks.before);
 
   // Set up our after hooks
-  userService.after(hooks.after);
-
+  leaderboardService.after(hooks.after);
   });
 };

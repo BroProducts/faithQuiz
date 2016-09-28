@@ -49,9 +49,3 @@ For more information on all the things you can do with Feathers visit [docs.feat
 __0.1.0__
 
 - Initial release
-
-## License
-
-Copyright (c) 2016
-
-Licensed under the [MIT license](LICENSE).

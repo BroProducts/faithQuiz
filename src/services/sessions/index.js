@@ -3,30 +3,31 @@
 const path = require('path');
 const MongoClient = require('mongodb').MongoClient;
 const service = require('feathers-mongodb');
-const hooks = require('./hooks');
+var hooks = require('./hooks');
 
 module.exports = function(){
-  const app = this;
+  var app = this;
+  //console.log(app)
+  var hooks = require('./hooks');
 
   MongoClient.connect('mongodb://localhost:27017/faithgame').then(function(db){
   // Connect to the db, create and register a Feathers service.
-  app.use('/users', service({
-    Model: db.collection('users'),
+  app.use('/sessions', service({
+    Model: db.collection('sessions'),
     paginate: {
-      default: 5,
-      max: 25
+      default: 500,
+      max: 1000
     }
   }));
-  
 
   // Get our initialize service to that we can bind hooks
-  const userService = app.service('/users');
+  var sessionsService = app.service('/sessions');
 
   // Set up our before hooks
-  userService.before(hooks.before);
+  sessionsService.before(hooks.before);
 
   // Set up our after hooks
-  userService.after(hooks.after);
+  sessionsService.after(hooks.after);
 
   });
 };

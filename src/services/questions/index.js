@@ -17,7 +17,7 @@ module.exports = function(){
     Model: db,
     paginate: {
       default: 5,
-      max: 25
+      max: 1000
     }
   };
 
@@ -30,6 +30,6 @@ module.exports = function(){
   // Set up our before hooks
   questionsService.before(hooks.before);
 
-  // Set up our after hooks
+  //Set up our after hooks
   questionsService.after(hooks.after);
 };
