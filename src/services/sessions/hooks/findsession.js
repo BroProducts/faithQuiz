@@ -7,8 +7,7 @@
 
 const MongoClient = require('mongodb').MongoClient
 const ObjectId = require('mongodb').ObjectID;
-// Connection URL
-const url = 'mongodb://localhost:27017/faithgame';
+const url = require('../../../../config/db.conf');
 
 module.exports = function(hook) {
     return new Promise((resolve, reject) => {
@@ -18,7 +17,7 @@ module.exports = function(hook) {
           const answer1count = hook.result.data[length - 1].answer1count
           const answer2count = hook.result.data[length - 1].answer2count
           console.log(hook.result.data)
-          if(answer1count > answer2count && hook.params.query.$or[1].userid == "answer1"){
+          if(answer1count >= answer2count && hook.params.query.$or[1].userid == "answer1"){
             console.log("answer1 correct")
 
             MongoClient.connect(url, function(err, db) {
@@ -36,7 +35,7 @@ module.exports = function(hook) {
               })
             })
 
-          }else if(answer1count < answer2count && hook.params.query.$or[1].userid == "answer2"){
+          }else if(answer1count <= answer2count && hook.params.query.$or[1].userid == "answer2"){
             console.log("answer2 correct")
             MongoClient.connect(url, function(err, db) {
               const sessionCollection = db.collection('sessions');

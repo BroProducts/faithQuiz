@@ -2,7 +2,7 @@
 
 const MongoClient = require('mongodb').MongoClient
 // Connection URL
-const url = 'mongodb://localhost:27017/faithgame';
+const url = require('../../../../config/db.conf');
 
 //Use connect method to connect to the server
 

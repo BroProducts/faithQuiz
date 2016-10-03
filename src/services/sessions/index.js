@@ -4,13 +4,14 @@ const path = require('path');
 const MongoClient = require('mongodb').MongoClient;
 const service = require('feathers-mongodb');
 var hooks = require('./hooks');
+const url = require('../../../config/db.conf');
 
 module.exports = function(){
   var app = this;
   //console.log(app)
   var hooks = require('./hooks');
 
-  MongoClient.connect('mongodb://localhost:27017/faithgame').then(function(db){
+  MongoClient.connect(url).then(function(db){
   // Connect to the db, create and register a Feathers service.
   app.use('/sessions', service({
     Model: db.collection('sessions'),
