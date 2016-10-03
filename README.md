@@ -20,7 +20,9 @@ Getting up and running is as easy as 1, 2, 3.
 3. add the database config file
 
    db.conf:
+   ```
    module.exports = 'mongodb://<username>:<password>@<host>:<port>/<db>'; 
+   ```
 
 
 4. Start your app
