@@ -29,3 +29,8 @@ node_modules
 
 lib/
 data/
+
+#database config
+
+db.conf
+

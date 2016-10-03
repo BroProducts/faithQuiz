@@ -12,6 +12,7 @@ app.ViewModelSinglePlayer = function() {
     };
 
     vm.getQuestion = function() {
+        app.showPreloaderFast();
         console.log(app.get('user')._id)
 
         
@@ -59,6 +60,7 @@ app.ViewModelSinglePlayer = function() {
     };
     
     vm.answerQuestion = function() {
+        app.showPreloaderFast();
         var answer = this;
         const query = {
             paginate: false,
@@ -83,7 +85,7 @@ app.ViewModelSinglePlayer = function() {
                 } else {
                     vm.lose();
                 };
-                app.hidePreloaderFast();
+                
 
         });
     };
@@ -94,5 +96,6 @@ app.ViewModelSinglePlayer = function() {
     vm.lose = function() {
         vm.gameStartet(false);
         vm.gameLost(true)
+        app.hidePreloaderFast();
     };
 };
