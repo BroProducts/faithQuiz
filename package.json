@@ -8,8 +8,8 @@
     "feathers"
   ],
   "repository": "https://github.com/Wenish/faithQuiz",
-  "author": "RH",
-  "contributors": [],
+  "author": "Raphael Hättich",
+  "contributors": ["Jonas Voland", "Raphael Hättich"],
   "bugs": {},
   "engines": {
     "node": ">= 0.12.0"
@@ -18,8 +18,7 @@
     "test": "npm run jshint && npm run mocha",
     "jshint": "jshint src/. test/. --config",
     "start": "node src/",
-    "mocha": "mocha test/ --recursive",
-    "nodemon": "nodemon src/"
+    "mocha": "mocha test/ --recursive"
   },
   "dependencies": {
     "body-parser": "^1.15.2",
@@ -31,12 +30,9 @@
     "feathers-errors": "^2.4.0",
     "feathers-hooks": "^1.5.7",
     "feathers-mongodb": "^2.5.1",
-    "feathers-nedb": "^2.5.1",
     "feathers-rest": "^1.5.0",
     "feathers-socketio": "^1.4.1",
     "mongodb": "^2.2.10",
-    "mongoose": "^4.6.1",
-    "nedb": "^1.8.0",
     "passport": "^0.3.2",
     "serve-favicon": "^2.3.0",
     "winston": "^2.2.0"
