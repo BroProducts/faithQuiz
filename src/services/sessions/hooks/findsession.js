@@ -16,7 +16,6 @@ module.exports = function(hook) {
         if(hook.params.query.$or){
           const answer1count = hook.result.data[length - 1].answer1count
           const answer2count = hook.result.data[length - 1].answer2count
-          console.log(hook.result.data)
           if(answer1count >= answer2count && hook.params.query.$or[1].userid == "answer1"){
             console.log("answer1 correct")
 

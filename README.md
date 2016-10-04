@@ -52,8 +52,3 @@ $ feathers help                           # Show all commands
 
 For more information on all the things you can do with Feathers visit [docs.feathersjs.com](http://docs.feathersjs.com).
 
-## Changelog
-
-__0.1.0__
-
-- Initial release

@@ -1,7 +1,7 @@
 {
   "name": "faithgame",
   "description": "quizgame",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "homepage": "",
   "main": "src/",
   "keywords": [
