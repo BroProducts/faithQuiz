@@ -43,12 +43,15 @@
                     <div class="menu-btn clickable" data-bind="click: openProfil">Profil</div>
                     <div class="menu-btn clickable" data-bind="click: openSingleplayer">Singleplayer</div>
                     <div class="menu-btn clickable" data-bind="click: openMultiplayer">Multiplayer</div>
+                    <div class="menu-btn clickable" data-bind="click: openLeaderboard">Leaderboard</div>
                 </div>
             </div>
             <div class="view view-multiplayer">
             </div>
             <div class="view view-singleplayer">
                 <span data-bind="text: singlePlayer.currentScore">0</span>
+            </div>
+            <div class="view view-leaderboard">
             </div>
         </div>
 
@@ -92,6 +95,37 @@
             </div>
             <div class="score-singleplayer">Score: <span data-bind="text: singlePlayer.currentScore">0</span></div>
         </div>
+
+        <div class="popup popup-leaderboard">
+            <div class="popup-title">Leaderboard</div>
+            <div class="popup-close-btn clickable" data-bind="click: closePopup">
+                <i class="ion-android-close"></i>
+            </div>
+
+            <table style="margin-top:60px">
+            <tr>
+                <th>Username</th>
+                <th>Score</th> 
+                <th>Date</th>
+            </tr>
+            <!-- ko if: leaderboard.leaderboardloaded() == true -->
+            <!-- ko foreach: leaderboard.leaderboarddata() -->
+            <tr>
+                <td data-bind="text: username"></td>
+                <td data-bind="text: score"></td> 
+                <td data-bind="text: date"></td>
+            </tr>
+            <!-- /ko -->
+            <!-- /ko -->
+            </table>
+
+
+
+            
+            <div ></div><div ></div><div ></div>
+            
+        </div>
+
     </div>
     <!-- JavaScript Vendor -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
@@ -107,8 +141,10 @@
     <script type="text/javascript" src="../js/utilities.js"></script>
     <script type="text/javascript" src="../js/classes/viewModelMain.js"></script>
     <script type="text/javascript" src="../js/classes/viewModelSinglePlayer.js"></script>
+    <script type="text/javascript" src="../js/classes/viewModelLeaderboard.js"></script>
     <script type="text/javascript" src="../js/classes/question.js"></script>
     <script type="text/javascript" src="../js/classes/answer.js"></script>
+    <script type="text/javascript" src="../js/classes/leaderboard.js"></script>
 
     <!-- JavaScript for Backgroundanimation -->
     <script type="text/javascript" src="../js/vendor/TweenLite.min.js"></script>

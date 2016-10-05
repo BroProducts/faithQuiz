@@ -1,6 +1,6 @@
 'use strict';
 
-const postquestion = require('./postquestion');
+//const postquestion = require('./postquestion');
 
 const globalHooks = require('../../../hooks');
 const hooks = require('feathers-hooks');

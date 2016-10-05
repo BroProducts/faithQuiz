@@ -1,5 +1,6 @@
 app.ViewModelMain = function() {
   var vm = this;
+  vm.leaderboard = new app.ViewModelLeaderboard()
   vm.closePopup = function() {
     $('.popup').fadeOut()
   }
@@ -11,6 +12,10 @@ app.ViewModelMain = function() {
   }
   vm.openMultiplayer = function() {
     console.log('openMultiplayer')
+  }
+  vm.openLeaderboard = function() {
+    $('.popup-leaderboard').fadeIn()  
+    vm.leaderboard.start()
   }
   vm.logout = function() {
     app.logout().then(function () {

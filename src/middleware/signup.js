@@ -6,7 +6,7 @@ module.exports = function(app) {
 
     // Get the user service and `create` a new user
     app.service('users').create({
-      email: body.email,
+      username: body.username,
       password: body.password
     })
     // Then redirect to the login page

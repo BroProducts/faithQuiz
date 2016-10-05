@@ -10,13 +10,13 @@ module.exports = function(hook) {
   return new Promise((resolve, reject) => {
     MongoClient.connect(url, function(err, db) {
       const sessionCollection = db.collection('sessions');
-      const questionCollection = db.collection('questions');
-      var gg = sessionCollection.find({"userid": hook.params.user._id.toString()}).sort({ $natural: -1 }).limit(1).toArray(function(err, docs) {
+      const questionCollection = db.collection('eioquestions');
+      sessionCollection.find({"userid": hook.params.user._id.toString()}).sort({ $natural: -1 }).limit(1).toArray(function(err, docs) {
         console.log(docs)
-
         if(docs[0] == undefined || docs[0].answerdone == true){
           questionCollection.count().then(function(N) {
-            const R = Math.floor(Math.random() * N);
+            const R = Math.floor(Math.random() * N)
+            console.log(R);
             questionCollection.find().limit(1)
               .skip(R).toArray(function(err, docs) {
                 if(err) {

@@ -8,6 +8,7 @@
       "secret": "sOKIu8GwRd3rkVuyXQbRdoUnGO+r5Af3ChYKcpHyUEMOWLAcJQfqVnoU62yWETuej5mdiBGqwghuHLZpyWXAHA=="
     },
     "local": {},
-    "successRedirect": "/pages/game.html"
+    "successRedirect": "/pages/game.html",
+    "usernameField": "username"
   }
 }
