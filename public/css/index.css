@@ -1,0 +1,9 @@
+html, body {
+    height: 100%;
+    min-height: 100%;
+}
+
+html {
+    background: #021725;
+    font-family: TheSaB5, 'Trebuchet MS', Arial, Helvetica, sans-serif!important;
+}
