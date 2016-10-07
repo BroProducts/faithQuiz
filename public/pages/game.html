@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/game.css">
 </head>
 
 <body>
@@ -105,14 +105,14 @@
             <table style="margin-top:60px">
             <tr>
                 <th>Username</th>
-                <th>Score</th> 
+                <th>Score</th>
                 <th>Date</th>
             </tr>
             <!-- ko if: leaderboard.leaderboardloaded() == true -->
             <!-- ko foreach: leaderboard.leaderboarddata() -->
             <tr>
                 <td data-bind="text: username"></td>
-                <td data-bind="text: score"></td> 
+                <td data-bind="text: score"></td>
                 <td data-bind="text: date"></td>
             </tr>
             <!-- /ko -->
@@ -121,9 +121,9 @@
 
 
 
-            
+
             <div ></div><div ></div><div ></div>
-            
+
         </div>
 
     </div>
@@ -154,4 +154,3 @@
 </body>
 
 </html>
-
