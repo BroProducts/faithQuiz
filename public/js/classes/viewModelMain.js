@@ -1,6 +1,7 @@
 app.ViewModelMain = function() {
   var vm = this;
   vm.leaderboard = new app.ViewModelLeaderboard()
+  vm.activeUser = ko.observable(app.get('user').username)
   vm.closePopup = function() {
     $('.popup').fadeOut()
   }
