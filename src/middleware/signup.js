@@ -1,4 +1,5 @@
 'use strict';
+const errors = require('feathers-errors');
 
 module.exports = function(app) {
   return function(req, res, next) {
@@ -12,6 +13,10 @@ module.exports = function(app) {
     // Then redirect to the login page
     .then(user => res.redirect('/pages/login.html'))
     // On errors, just call our error middleware
-    .catch(next);
+    .catch(function(err){
+      console.log("err"+err)
+      const validationErrors = new errors.BadRequest('Invalid Parameters', {errors: {username: 'Username already taken'} });
+      next(validationErrors)
+    });
   };
 };

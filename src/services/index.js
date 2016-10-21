@@ -1,4 +1,5 @@
 'use strict';
+const signup = require('./signup');
 const sessions = require('./sessions');
 const leaderboard = require('./leaderboard');
 const authentication = require('./authentication');
@@ -12,4 +13,5 @@ module.exports = function() {
   app.configure(user);
   app.configure(leaderboard);
   app.configure(sessions);
+  app.configure(signup);
 };
