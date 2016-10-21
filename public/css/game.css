@@ -362,7 +362,7 @@ body {
 
 .login-btn {
     box-sizing: border-box;
-    width: 74px;
+    width: 100px;
     background-color: rgba(88, 89, 91, 0.2);
     font-size: 22px;
     padding: 5px 10px;
