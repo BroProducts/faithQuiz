@@ -1,49 +1,35 @@
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="author" content="Jonas Voland and Raphael Hättich" />
-    <title>Faithgame</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://twitchemotes.com/favicon.png" />
-    <!-- CSS Reset -->
-    <link rel="stylesheet" href="../css/reset.css">
 
-    <!-- CSS Vendor -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="author" content="Jonas Voland and Raphael Hättich" />
+  <title>Faithgame</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://twitchemotes.com/favicon.png" />
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="../css/reset.css">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/signup.css">
-    
-    <script src="//unpkg.com/feathers-client@^1.0.0/dist/feathers.js"></script>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="../js/signup.js"></script>
-  </head>
-  <body>
-    <main class="login container">
-      <div class="row">
-        <div class="col-12 col-6-tablet push-3-tablet text-center">
-          <h1 class="font-100">Create an Account</h1>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 col-6-tablet push-3-tablet col-4-desktop push-4-desktop text-center">
-          <div>
-            <fieldset>
-              <input class="block" type="text" id="username" placeholder="Username">
-            </fieldset>
-            <fieldset>
-              <input class="block" type="password" id="password" placeholder="password">
-            </fieldset>
-            <button onclick="signup()" class="button button-primary block signup">
-              Signup
-            </button>
-          </div>
-        </div>
-      </div>
-    </main>
-  </body>
+  <!-- CSS Vendor -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/signup.css">
+
+  <script src="//unpkg.com/feathers-client@^1.0.0/dist/feathers.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="../js/signup.js"></script>
+</head>
+
+<body>
+  <div class="login container">
+    <input class="block" type="text" id="username" placeholder="Username">
+    <input class="block" type="password" id="password" placeholder="password">
+    <button onclick="signup()" class="button button-primary block signup">Signup</button>
+  </div>
+</body>
+
 </html>
