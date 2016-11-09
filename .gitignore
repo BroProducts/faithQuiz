@@ -32,5 +32,5 @@ data/
 
 #database config
 
-db.conf
+config/db.conf
 

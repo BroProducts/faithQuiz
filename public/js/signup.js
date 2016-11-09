@@ -6,6 +6,7 @@ var app = feathers()
 var signupService = app.service('signups');
 
 function signup() {
+    if(document.getElementById("password") == document.getElementById("confpassword")){
     //console.log("insignup1")
     signupService.create({
         username: document.getElementById("username").value,
@@ -25,5 +26,8 @@ function signup() {
         }else{
             alert("Something bad happend")
         }
-    });   
+    }); 
+    }else{
+        alert("your passwords do not match")
+    }  
 }
