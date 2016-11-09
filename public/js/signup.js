@@ -6,7 +6,7 @@ var app = feathers()
 var signupService = app.service('signups');
 
 function signup() {
-    if(document.getElementById("password") == document.getElementById("confpassword")){
+    if(document.getElementById("password").value == document.getElementById("confpassword").value){
     //console.log("insignup1")
     signupService.create({
         username: document.getElementById("username").value,
