@@ -41,6 +41,8 @@ app.authenticate().then(function () {
   }
 });
 
+//reconnect handler
+socket.on("reconnect", function() {app.authenticate()})
 
 
 
