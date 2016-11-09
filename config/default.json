@@ -9,6 +9,7 @@
     },
     "local": {},
     "successRedirect": "/pages/game.html",
+    "failureRedirect": "/pages/authfailed.html",
     "usernameField": "username"
   }
 }
