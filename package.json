@@ -9,7 +9,10 @@
   ],
   "repository": "https://github.com/BroProducts/faithQuiz",
   "author": "Raphael Hättich",
-  "contributors": ["Jonas Voland", "Raphael Hättich"],
+  "contributors": [
+    "Jonas Voland",
+    "Raphael Hättich"
+  ],
   "bugs": {},
   "engines": {
     "node": ">= 6.8.0"
@@ -33,6 +36,7 @@
     "feathers-mongodb": "^2.5.1",
     "feathers-rest": "^1.5.0",
     "feathers-socketio": "^1.4.1",
+    "forever": "^0.15.3",
     "mongodb": "^2.2.10",
     "passport": "^0.3.2",
     "serve-favicon": "^2.3.0",
