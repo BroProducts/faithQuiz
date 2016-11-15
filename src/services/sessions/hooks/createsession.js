@@ -1,13 +1,10 @@
 'use strict';
 
 const MongoClient = require('mongodb').MongoClient
-// Connection URL
-const url = require('../../../../config/db.conf');
-
-//Use connect method to connect to the server
 
 module.exports = function(hook) {
   return new Promise((resolve, reject) => {
+    const url = hook.app.locals.settings.mongodb;
     MongoClient.connect(url, function(err, db) {
       const sessionCollection = db.collection('sessions');
       const questionCollection = db.collection('eioquestions');

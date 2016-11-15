@@ -4,10 +4,10 @@ const path = require('path');
 const MongoClient = require('mongodb').MongoClient;
 const service = require('feathers-mongodb');
 const hooks = require('./hooks');
-const url = require('../../../config/db.conf');
+
 module.exports = function(){
   const app = this;
-
+  const url = app.get('mongodb');
   MongoClient.connect(url).then(function(db){
   // Connect to the db, create and register a Feathers service.
   app.use('/users', service({

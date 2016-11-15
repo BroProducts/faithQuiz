@@ -6,13 +6,12 @@
 // For more information on hooks see: http://docs.feathersjs.com/hooks/readme.html
 const bcrypt = require('bcryptjs');
 const MongoClient = require('mongodb').MongoClient
-// Connection URL
-const url = require('../../../../config/db.conf');
+
 
 module.exports = function(hook) {
   return new Promise((resolve, reject) => {
     console.log("in da hood")
-    console.log(hook.data.username)
+    const url = hook.app.locals.settings.mongodb;
     MongoClient.connect(url, function(err, db) {
       const userCollection = db.collection('users');
       userCollection.find({"username": hook.data.username}).toArray(function(err, docs) {

@@ -5,7 +5,6 @@
 //
 // Use this hook to manipulate incoming or outgoing data.
 // For more information on hooks see: http://docs.feathersjs.com/hooks/readme.html
-const url = require('../../../../config/db.conf');
 
 
 module.exports = function(options) {
