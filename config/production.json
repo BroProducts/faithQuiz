@@ -1,7 +1,7 @@
 {
   "host": "https://faithquiz.herokuapp.com",
   "port": "process.env.PORT",
-  "nedb": "process.env.MONGODB_URI",
+  "mongodb": "process.env.MONGODB_URI",
   "public": "../public/",
   "auth": {
     "token": {
