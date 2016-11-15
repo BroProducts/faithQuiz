@@ -8,28 +8,7 @@ This project uses [Feathers](http://feathersjs.com). An open source web framewor
 
 ## Getting Started
 
-Getting up and running is as easy as 1, 2, 3.
-
-1. Make sure you have [NodeJS](https://nodejs.org/) and [npm](https://www.npmjs.com/) installed.
-2. Install your dependencies
-    
-    ```
-    cd path/to/faithgame; npm install
-    ```
-
-3. add the database config file
-
-   db.conf:
-   ```
-   module.exports = 'mongodb://<username>:<password>@<host>:<port>/<db>'; 
-   ```
-
-
-4. Start your app
-    
-    ```
-    npm start
-    ```
+See WIKI: https://github.com/BroProducts/faithQuiz/wiki/SetUp-Dev-Env
 
 ## Testing
 
