@@ -30,7 +30,3 @@ node_modules
 lib/
 data/
 
-#database config
-
-config/db.conf
-
