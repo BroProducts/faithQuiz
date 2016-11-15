@@ -1,12 +1,15 @@
 {
-  "host": "faithgame-app.feathersjs.com",
-  "port": 80,
-  "nedb": "NEDB_BASE_PATH",
+  "host": "https://faithquiz.herokuapp.com",
+  "port": "process.env.PORT",
+  "nedb": "process.env.MONGODB_URI",
   "public": "../public/",
   "auth": {
     "token": {
-      "secret": "FEATHERS_AUTH_SECRET"
+      "secret": "process.env.SECRET"
     },
-    "local": {}
+    "local": {},
+    "successRedirect": "/pages/game.html",
+    "failureRedirect": "/pages/authfailed.html",
+    "usernameField": "username"
   }
 }
