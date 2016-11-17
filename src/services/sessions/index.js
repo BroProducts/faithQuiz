@@ -11,7 +11,7 @@ module.exports = function(){
   if(stingurl == "process.env.MONGODB_URI"){
     console.log("if")
     const urlstr = eval(stingurl);
-    const url = urlstr.toString();
+    var url = urlstr.toString();
   }else{
     var url = stingurl
     console.log(url)
