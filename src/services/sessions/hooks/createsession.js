@@ -5,7 +5,15 @@ const MongoClient = require('mongodb').MongoClient
 module.exports = function(hook) {
   return new Promise((resolve, reject) => {
     const stingurl = hook.app.locals.settings.mongodb;
-    const url = eval(stingurl).toString()
+    if(stingurl == "process.env.MONGODB_URI"){
+    console.log("if")
+    const urlstr = eval(stingurl);
+    const url = urlstr.toString();
+  }else{
+    var url = stingurl
+    console.log(url)
+    console.log("esle")
+  }
     MongoClient.connect(url, function(err, db) {
       const sessionCollection = db.collection('sessions');
       const questionCollection = db.collection('eioquestions');

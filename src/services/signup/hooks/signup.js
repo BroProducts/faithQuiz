@@ -12,7 +12,15 @@ module.exports = function(hook) {
   return new Promise((resolve, reject) => {
     console.log("in da hood")
     const stingurl = hook.app.locals.settings.mongodb;
-    const url = eval(stingurl).toString()
+    if(stingurl == "process.env.MONGODB_URI"){
+    console.log("if")
+    const urlstr = eval(stingurl);
+    const url = urlstr.toString();
+  }else{
+    var url = stingurl
+    console.log(url)
+    console.log("esle")
+  }
     MongoClient.connect(url, function(err, db) {
       const userCollection = db.collection('users');
       userCollection.find({"username": hook.data.username}).toArray(function(err, docs) {

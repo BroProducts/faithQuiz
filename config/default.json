@@ -1,6 +1,6 @@
 {
   "host": "localhost",
-  "port": 3030,
+  "port": 3000,
   "mongodb": "mongodb://localhost:27017/db",
   "public": "../public/",
   "auth": {

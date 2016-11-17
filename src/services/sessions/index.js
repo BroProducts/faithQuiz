@@ -8,7 +8,15 @@ module.exports = function(){
   var app = this;
   //console.log(app)
   const stingurl = app.get('mongodb');
-  const url = eval(stingurl).toString()
+  if(stingurl == "process.env.MONGODB_URI"){
+    console.log("if")
+    const urlstr = eval(stingurl);
+    const url = urlstr.toString();
+  }else{
+    var url = stingurl
+    console.log(url)
+    console.log("esle")
+  }
   MongoClient.connect(url).then(function(db){
   // Connect to the db, create and register a Feathers service.
   app.use('/sessions', service({
