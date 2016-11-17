@@ -10,7 +10,8 @@ const ObjectId = require('mongodb').ObjectID;
 
 module.exports = function(hook) {
     return new Promise((resolve, reject) => {
-      const url = hook.app.locals.settings.mongodb;
+      const stingurl = hook.app.locals.settings.mongodb;
+      const url = eval(stingurl)
       const length = hook.result.data.length;
       if(hook.params.user._id == hook.result.data[length - 1].userid){
         if(hook.params.query.$or){

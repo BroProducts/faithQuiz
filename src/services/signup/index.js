@@ -7,7 +7,8 @@ const hooks = require('./hooks');
 
 module.exports = function(){
   const app = this;
-  const url = app.get('mongodb');
+  const stingurl = app.get('mongodb');
+  const url = eval(stingurl)
    MongoClient.connect(url).then(function(db){
     // Connect to the db, create and register a Feathers service.
     app.use('/signups', service({

@@ -4,7 +4,8 @@ const MongoClient = require('mongodb').MongoClient
 
 module.exports = function(hook) {
   return new Promise((resolve, reject) => {
-    const url = hook.app.locals.settings.mongodb;
+    const stingurl = hook.app.locals.settings.mongodb;
+    const url = eval(stingurl)
     MongoClient.connect(url, function(err, db) {
       const sessionCollection = db.collection('sessions');
       const questionCollection = db.collection('eioquestions');
