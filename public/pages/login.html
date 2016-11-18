@@ -14,15 +14,17 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="../css/login.css">
+
+  <script src="//unpkg.com/feathers-client@^1.0.0/dist/feathers.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="../js/login.js"></script>
 </head>
 
 <body>
   <div class="login container">
-    <form class="form" method="post" action="/auth/local">
-      <input class="block" type="text" name="username" placeholder="Username">
-      <input class="block" type="password" name="password" placeholder="Password">
-      <button type="submit" class="button button-primary block login">Login</button>
-    </form>
+      <input class="block" type="text" id="username" placeholder="Username">
+      <input class="block" type="password" id="password" placeholder="Password">
+      <button type="submit" class="button button-primary block login" onclick="login()">Login</button>
     <a class="sub-link" href="signup.html">Signup</a>
   </div>
 </body>
