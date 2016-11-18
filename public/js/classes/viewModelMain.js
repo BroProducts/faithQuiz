@@ -24,4 +24,5 @@ app.ViewModelMain = function() {
     });
   }
   vm.singlePlayer = new app.ViewModelSinglePlayer()
+  vm.singlePlayer = new app.ViewModelMultiPlayer()
 };
