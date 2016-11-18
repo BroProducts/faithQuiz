@@ -9,13 +9,13 @@ app.ViewModelMain = function() {
     $('.popup-profil').fadeIn()
   }
   vm.openSingleplayer = function() {
-    $('.popup-singleplayer').fadeIn()      
+    $('.popup-singleplayer').fadeIn()
   }
   vm.openMultiplayer = function() {
-    console.log('openMultiplayer')
+    $('.popup-multiplayer').fadeIn()
   }
   vm.openLeaderboard = function() {
-    $('.popup-leaderboard').fadeIn()  
+    $('.popup-leaderboard').fadeIn()
     vm.leaderboard.start()
   }
   vm.logout = function() {

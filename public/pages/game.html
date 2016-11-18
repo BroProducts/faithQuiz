@@ -46,13 +46,6 @@
                     <div class="menu-btn clickable" data-bind="click: openLeaderboard">Leaderboard</div>
                 </div>
             </div>
-            <div class="view view-multiplayer">
-            </div>
-            <div class="view view-singleplayer">
-                <span data-bind="text: singlePlayer.currentScore">0</span>
-            </div>
-            <div class="view view-leaderboard">
-            </div>
         </div>
 
         <div class="popup popup-profil">
@@ -96,6 +89,15 @@
             <div class="score-singleplayer">Score: <span data-bind="text: singlePlayer.currentScore">0</span></div>
         </div>
 
+        <div class="popup popup-multiplayer">
+            <div class="popup-title">Multiplayer</div>
+            <div class="popup-close-btn clickable" data-bind="click: closePopup">
+                <i class="ion-android-close"></i>
+            </div>
+            <div class="game-multiplayer">
+            </div>
+        </div>
+
         <div class="popup popup-leaderboard">
             <div class="popup-title">Leaderboard</div>
             <div class="popup-close-btn clickable" data-bind="click: closePopup">
@@ -105,25 +107,19 @@
             <table style="margin-top:60px">
             <tr>
                 <th>Username</th>
-                <th>Score</th> 
+                <th>Score</th>
                 <th>Date</th>
             </tr>
             <!-- ko if: leaderboard.leaderboardloaded() == true -->
             <!-- ko foreach: leaderboard.leaderboarddata() -->
             <tr>
                 <td data-bind="text: username"></td>
-                <td data-bind="text: score"></td> 
+                <td data-bind="text: score"></td>
                 <td data-bind="text: date"></td>
             </tr>
             <!-- /ko -->
             <!-- /ko -->
             </table>
-
-
-
-            
-            <div ></div><div ></div><div ></div>
-            
         </div>
 
     </div>
@@ -154,4 +150,3 @@
 </body>
 
 </html>
-
