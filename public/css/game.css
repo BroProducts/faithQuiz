@@ -390,6 +390,8 @@ body {
   height: 44px;
   line-height: 44px;
   background: rgba(0, 129, 180, 0.5);
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .multiplayer-btn-new-game-text {
