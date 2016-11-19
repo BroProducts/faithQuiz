@@ -54,16 +54,16 @@ body {
 }
 
 *::-webkit-scrollbar {
-    width: 6px!important;
-    height: 6px!important;
+  width: 6px!important;
+  height: 6px!important;
 }
 
 *::-webkit-scrollbar-thumb {
-    background-color: rgba(0,0,0,.2);
+  background-color: rgba(0, 173, 77, 0.4);
 }
 
 *::-webkit-scrollbar-track {
-    background: rgba(255,255,255,.08);
+  background: rgba(255, 255, 255, 0.18);
 }
 
 .app-wrapper {
