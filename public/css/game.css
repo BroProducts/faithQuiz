@@ -392,6 +392,15 @@ body {
   background: rgba(0, 129, 180, 0.5);
 }
 
+.multiplayer-btn-new-game-text {
+  float: left;
+}
+
+.multiplayer-btn-new-game-icon {
+  float: right;
+  font-size: 44px;
+}
+
 
 /*--- Leaderboard ---*/
 
