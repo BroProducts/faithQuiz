@@ -14,11 +14,10 @@ app.hidePreloaderFast = function () {
 };
 
 $(document).on('click', '.clickable', function(el) {
-  var self = this
   $('.clickEffect').removeClass('clickEffect');
-  $(self).addClass('clickEffect');
+  $(this).addClass('clickEffect');
   setTimeout(function(){
-    $(self).removeClass('clickEffect');
+    $('.clickEffect').removeClass('clickEffect');
   },300);
 });
 
