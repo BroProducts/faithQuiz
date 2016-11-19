@@ -397,6 +397,10 @@ hr {
   font-size: 15px;
 }
 
+.multiplayer-welcome-message-playername{
+  font-weight: bold;
+}
+
 .multiplayer-btn-group-list {
   margin-top: 10px;
 }
