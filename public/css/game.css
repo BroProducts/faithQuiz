@@ -392,7 +392,12 @@ hr {
   overflow-y: auto;
 }
 
-.multiplayer-btn-group-list{
+.multiplayer-welcome-message {
+  margin-top: 10px;
+  font-size: 15px;
+}
+
+.multiplayer-btn-group-list {
   margin-top: 10px;
 }
 
@@ -450,7 +455,7 @@ hr {
   text-align: -webkit-center;
 }
 
-.multiplayer-ongoing-games-wrapper{
+.multiplayer-ongoing-games-wrapper {
   margin-top: 10px;
 }
 
