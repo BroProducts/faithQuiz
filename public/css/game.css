@@ -379,7 +379,9 @@ body {
 .multiplayer-page {
   position: absolute;
   height: calc(100% - 47px);
-  width: 100%;
+  width: calc(100% - 20px);
+  margin-left: 10px;
+  margin-right: 10px;
   margin-top: 47px;
   overflow-y: auto;
 }
@@ -395,8 +397,8 @@ body {
 }
 
 .leaderboard-table {
-  margin-left: 5px;
-  margin-right: 5px;
-  width: calc(100% - 10px);
+  margin-left: 10px;
+  margin-right: 10px;
+  width: calc(100% - 20px);
   text-align: center;
 }
