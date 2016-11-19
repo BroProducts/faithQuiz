@@ -7,8 +7,7 @@ app.ViewModelMultiPlayer = function() {
     vm.friendslist = ko.observableArray();
 
 
-
-    vm.startNewGame() = function(){
+    vm.startNewGame = function(){
       console.log('start new game');
     };
 
