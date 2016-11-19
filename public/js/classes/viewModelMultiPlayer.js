@@ -1,5 +1,5 @@
 app.ViewModelMultiPlayer = function() {
     var vm = this;
-
-    console.log('MultiPlayer ViewModel loaded')
+    vm.friendslist = ko.observableArray();
+    console.log('MultiPlayer ViewModel loaded');
 };
