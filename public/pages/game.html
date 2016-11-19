@@ -1,153 +1,154 @@
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black">
-    <meta name="author" content="Jonas Voland and Raphael Hättich" />
-    <title>Faith Game</title>
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="https://twitchemotes.com/favicon.png" />
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="author" content="Jonas Voland and Raphael Hättich" />
+  <title>Faith Game</title>
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="https://twitchemotes.com/favicon.png" />
 
-    <!-- CSS Reset -->
-    <link rel="stylesheet" href="../css/reset.css">
+  <!-- CSS Reset -->
+  <link rel="stylesheet" href="../css/reset.css">
 
-    <!-- CSS Vendor -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- CSS Vendor -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="../css/game.css">
+  <!-- CSS -->
+  <link rel="stylesheet" href="../css/game.css">
 </head>
 
 <body>
-    <div class="app-wrapper">
-        <div class="preloader">
-            <div class="spinner spinner-1"></div>
-        </div>
-
-        <div class="container-animation">
-            <div class="content">
-                <div id="large-header" class="large-header">
-                    <canvas id="demo-canvas"></canvas>
-                </div>
-            </div>
-        </div>
-
-        <div class="views">
-            <div class="view view-main">
-                <div class="game-title">Faith Game</div>
-
-                <div class="menu-container">
-                    <div class="menu-btn clickable" data-bind="click: openProfil">Profil</div>
-                    <div class="menu-btn clickable" data-bind="click: openSingleplayer">Singleplayer</div>
-                    <div class="menu-btn clickable" data-bind="click: openMultiplayer">Multiplayer</div>
-                    <div class="menu-btn clickable" data-bind="click: openLeaderboard">Leaderboard</div>
-                </div>
-            </div>
-        </div>
-
-        <div class="popup popup-profil">
-            <div class="popup-title"  data-bind="text: activeUser">Gast</div>
-            <div class="popup-close-btn clickable" data-bind="click: closePopup">
-                <i class="ion-android-close"></i>
-            </div>
-            <div class="profil-container">
-                <div class="login-form">
-                    <div class="login-btn" data-bind="click: logout">Logout</div>
-                </div>
-                <div class="signup-form">
-
-                </div>
-            </div>
-        </div>
-
-        <div class="popup popup-singleplayer">
-            <div class="popup-title">Singleplayer</div>
-            <div class="popup-close-btn clickable" data-bind="click: closePopup">
-                <i class="ion-android-close"></i>
-            </div>
-            <div class="game-singleplayer">
-                <!-- ko if: singlePlayer.gameStartet() == true -->
-                <!-- ko if: singlePlayer.activeQuestion() != undefined -->
-                <div class="game-singleplayer-question" data-bind="text: singlePlayer.activeQuestion().questionText">Question?</div>
-                <div class="game-singleplayer-answers">
-                    <!-- ko foreach: singlePlayer.activeQuestion().answers -->
-                    <div class="game-singleplayer-answer clickable" data-bind="text: answerText, click: $root.singlePlayer.answerQuestion">Answer!</div>
-                    <!-- /ko -->
-                    <div class="game-singleplayer-answer answer-advertisement">advertisement right here</div>
-                </div>
-                <!-- /ko -->
-                <!-- /ko -->
-
-                <!-- ko if: singlePlayer.gameStartet() == false -->
-                <div class="singleplayer-game-over" data-bind="visible: singlePlayer.gameLost() == true">Game Over</div>
-                <div class="btn-start-game clickable" data-bind="click: singlePlayer.start">Start Game</div>
-                <!-- /ko -->
-            </div>
-            <div class="score-singleplayer">Score: <span data-bind="text: singlePlayer.currentScore">0</span></div>
-        </div>
-
-        <div class="popup popup-multiplayer">
-            <div class="popup-title">Multiplayer</div>
-            <div class="popup-close-btn clickable" data-bind="click: closePopup">
-                <i class="ion-android-close"></i>
-            </div>
-            <div class="game-multiplayer">
-            </div>
-        </div>
-
-        <div class="popup popup-leaderboard">
-            <div class="popup-title">Leaderboard</div>
-            <div class="popup-close-btn clickable" data-bind="click: closePopup">
-                <i class="ion-android-close"></i>
-            </div>
-
-            <table style="margin-top:60px">
-            <tr>
-                <th>Username</th>
-                <th>Score</th>
-                <th>Date</th>
-            </tr>
-            <!-- ko if: leaderboard.leaderboardloaded() == true -->
-            <!-- ko foreach: leaderboard.leaderboarddata() -->
-            <tr>
-                <td data-bind="text: username"></td>
-                <td data-bind="text: score"></td>
-                <td data-bind="text: date"></td>
-            </tr>
-            <!-- /ko -->
-            <!-- /ko -->
-            </table>
-        </div>
-
+  <div class="app-wrapper">
+    <div class="preloader">
+      <div class="spinner spinner-1"></div>
     </div>
-    <!-- JavaScript Vendor -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.js"></script>
-    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/core-js/2.1.4/core.min.js"></script>
-    <script src="//unpkg.com/feathers-client@^1.0.0/dist/feathers.js"></script>
-    <script src="/socket.io/socket.io.js"></script>
-    <!-- JavaScript -->
-    <script type="text/javascript" src="../js/game.js"></script>
-    <script type="text/javascript" src="../js/utilities.js"></script>
-    <script type="text/javascript" src="../js/classes/viewModelMain.js"></script>
-    <script type="text/javascript" src="../js/classes/viewModelSinglePlayer.js"></script>
-    <script type="text/javascript" src="../js/classes/viewModelMultiPlayer.js"></script>
-    <script type="text/javascript" src="../js/classes/viewModelLeaderboard.js"></script>
-    <script type="text/javascript" src="../js/classes/question.js"></script>
-    <script type="text/javascript" src="../js/classes/answer.js"></script>
-    <script type="text/javascript" src="../js/classes/leaderboard.js"></script>
 
-    <!-- JavaScript for Backgroundanimation -->
-    <script type="text/javascript" src="../js/vendor/TweenLite.min.js"></script>
-    <script type="text/javascript" src="../js/vendor/EasePack.min.js"></script>
-    <script type="text/javascript" src="../js/vendor/rAF.js"></script>
-    <script type="text/javascript" src="../js/vendor/backgroundanimation.js"></script>
+    <div class="container-animation">
+      <div class="content">
+        <div id="large-header" class="large-header">
+          <canvas id="demo-canvas"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="views">
+      <div class="view view-main">
+        <div class="game-title">Faith Game</div>
+
+        <div class="menu-container">
+          <div class="menu-btn clickable" data-bind="click: openProfil">Profil</div>
+          <div class="menu-btn clickable" data-bind="click: openSingleplayer">Singleplayer</div>
+          <div class="menu-btn clickable" data-bind="click: openMultiplayer">Multiplayer</div>
+          <div class="menu-btn clickable" data-bind="click: openLeaderboard">Leaderboard</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup popup-profil">
+      <div class="popup-title" data-bind="text: activeUser">Gast</div>
+      <div class="popup-close-btn clickable" data-bind="click: closePopup">
+        <i class="ion-android-close"></i>
+      </div>
+      <div class="profil-container">
+        <div class="login-form">
+          <div class="login-btn" data-bind="click: logout">Logout</div>
+        </div>
+        <div class="signup-form">
+
+        </div>
+      </div>
+    </div>
+
+    <div class="popup popup-singleplayer">
+      <div class="popup-title">Singleplayer</div>
+      <div class="popup-close-btn clickable" data-bind="click: closePopup">
+        <i class="ion-android-close"></i>
+      </div>
+      <div class="game-singleplayer">
+        <!-- ko if: singlePlayer.gameStartet() == true -->
+        <!-- ko if: singlePlayer.activeQuestion() != undefined -->
+        <div class="game-singleplayer-question" data-bind="text: singlePlayer.activeQuestion().questionText">Question?</div>
+        <div class="game-singleplayer-answers">
+          <!-- ko foreach: singlePlayer.activeQuestion().answers -->
+          <div class="game-singleplayer-answer clickable" data-bind="text: answerText, click: $root.singlePlayer.answerQuestion">Answer!</div>
+          <!-- /ko -->
+          <div class="game-singleplayer-answer answer-advertisement">advertisement right here</div>
+        </div>
+        <!-- /ko -->
+        <!-- /ko -->
+
+        <!-- ko if: singlePlayer.gameStartet() == false -->
+        <div class="singleplayer-game-over" data-bind="visible: singlePlayer.gameLost() == true">Game Over</div>
+        <div class="btn-start-game clickable" data-bind="click: singlePlayer.start">Start Game</div>
+        <!-- /ko -->
+      </div>
+      <div class="score-singleplayer">Score: <span data-bind="text: singlePlayer.currentScore">0</span></div>
+    </div>
+
+    <div class="popup popup-multiplayer">
+      <div class="popup-title">Multiplayer</div>
+      <div class="popup-close-btn clickable" data-bind="click: closePopup">
+        <i class="ion-android-close"></i>
+      </div>
+      <div class="game-multiplayer">
+      </div>
+    </div>
+
+    <div class="popup popup-leaderboard">
+      <div class="popup-title">Leaderboard</div>
+      <div class="popup-close-btn clickable" data-bind="click: closePopup">
+        <i class="ion-android-close"></i>
+      </div>
+      <div class="leaderboard-page">
+        <table class="leaderboard-table">
+          <tr>
+            <th>Username</th>
+            <th>Score</th>
+            <th>Date</th>
+          </tr>
+          <!-- ko if: leaderboard.leaderboardloaded() == true -->
+          <!-- ko foreach: leaderboard.leaderboarddata() -->
+          <tr>
+            <td data-bind="text: username"></td>
+            <td data-bind="text: score"></td>
+            <td data-bind="text: date"></td>
+          </tr>
+          <!-- /ko -->
+          <!-- /ko -->
+        </table>
+      </div>
+    </div>
+
+  </div>
+  <!-- JavaScript Vendor -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.4.0/knockout-min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fastclick/1.0.6/fastclick.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.23/browser.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.12.0/moment.js"></script>
+  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/core-js/2.1.4/core.min.js"></script>
+  <script src="//unpkg.com/feathers-client@^1.0.0/dist/feathers.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <!-- JavaScript -->
+  <script type="text/javascript" src="../js/game.js"></script>
+  <script type="text/javascript" src="../js/utilities.js"></script>
+  <script type="text/javascript" src="../js/classes/viewModelMain.js"></script>
+  <script type="text/javascript" src="../js/classes/viewModelSinglePlayer.js"></script>
+  <script type="text/javascript" src="../js/classes/viewModelMultiPlayer.js"></script>
+  <script type="text/javascript" src="../js/classes/viewModelLeaderboard.js"></script>
+  <script type="text/javascript" src="../js/classes/question.js"></script>
+  <script type="text/javascript" src="../js/classes/answer.js"></script>
+  <script type="text/javascript" src="../js/classes/leaderboard.js"></script>
+
+  <!-- JavaScript for Backgroundanimation -->
+  <script type="text/javascript" src="../js/vendor/TweenLite.min.js"></script>
+  <script type="text/javascript" src="../js/vendor/EasePack.min.js"></script>
+  <script type="text/javascript" src="../js/vendor/rAF.js"></script>
+  <script type="text/javascript" src="../js/vendor/backgroundanimation.js"></script>
 </body>
 
 </html>

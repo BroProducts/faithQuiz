@@ -8,365 +8,345 @@ grey: #58595B
 */
 
 html, body {
-    height: 100%;
-    min-height: 100%;
+  height: 100%;
+  min-height: 100%;
 }
 
 html {
-    background: #021725;
-    font-family: TheSaB5, 'Trebuchet MS', Arial, Helvetica, sans-serif!important;
+  background: #021725;
+  font-family: TheSaB5, 'Trebuchet MS', Arial, Helvetica, sans-serif!important;
 }
 
 body {
-    color: #fff;
-    height: 100%;
-    min-height: 100%;
-    display: -webkit-flex;
-    -webkit-align-items: center;
-    -webkit-justify-content: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* iOS Safari */
-    -webkit-touch-callout: none;
-    /* Chrome/Safari/Opera */
-    -webkit-user-select: none;
-    /* Konqueror */
-    -khtml-user-select: none;
-    /* Firefox */
-    -moz-user-select: none;
-    /* Internet Explorer/Edge */
-    -ms-user-select: none;
-    user-select: none;
-    cursor: default;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0081b4+18,0081b4+18,00ad4d+100 */
-    background: #0081b4;
-    /* Old browsers */
-    background: -moz-linear-gradient(top, #0081b4 18%, #0081b4 18%, #00ad4d 100%);
-    /* FF3.6-15 */
-    background: -webkit-linear-gradient(top, #0081b4 18%, #0081b4 18%, #00ad4d 100%);
-    /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #0081b4 18%, #0081b4 18%, #00ad4d 100%);
-    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0081b4', endColorstr='#00ad4d', GradientType=0);
-    /* IE6-9 */
-    overflow: hidden;
+  color: #fff;
+  height: 100%;
+  min-height: 100%;
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  -webkit-justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* iOS Safari */
+  -webkit-touch-callout: none;
+  /* Chrome/Safari/Opera */
+  -webkit-user-select: none;
+  /* Konqueror */
+  -khtml-user-select: none;
+  /* Firefox */
+  -moz-user-select: none;
+  /* Internet Explorer/Edge */
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#0081b4+18,0081b4+18,00ad4d+100 */
+  background: #0081b4;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #0081b4 18%, #0081b4 18%, #00ad4d 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #0081b4 18%, #0081b4 18%, #00ad4d 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #0081b4 18%, #0081b4 18%, #00ad4d 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#0081b4', endColorstr='#00ad4d', GradientType=0);
+  /* IE6-9 */
+  overflow: hidden;
 }
 
 .app-wrapper {
-    width: 100%;
-    height: 100%;
-    background: #021725;
+  width: 100%;
+  height: 100%;
+  background: #021725;
 }
 
 @media screen and (min-width: 600px) {
-    .app-wrapper {
-        position: absolute;
-        width: 375px;
-        height: 668px;
-        border-radius: 3px;
-        box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .06), 0 2px 5px 0 rgba(0, 0, 0, .2);
-    }
+  .app-wrapper {
+    position: absolute;
+    width: 375px;
+    height: 668px;
+    border-radius: 3px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .06), 0 2px 5px 0 rgba(0, 0, 0, .2);
+  }
 }
 
 .container-animation {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .view {
-    display: none;
-    top: 0;
-    right: 0;
-    position: absolute;
-    width: 100%;
-    height: 100%;
+  display: none;
+  top: 0;
+  right: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 
 .spinner {
-    display: block;
-    width: 60px;
-    height: 60px;
-    background: #eee;
-    border-radius: 50%;
-    position: relative;
-    margin: auto;
-    top: calc(50% - 30px);
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: #eee;
+  border-radius: 50%;
+  position: relative;
+  margin: auto;
+  top: calc(50% - 30px);
 }
 
 .spinner:after, .spinner:before {
-    content: "";
-    display: block;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
 
 .spinner-1:after {
-    position: absolute;
-    top: -4px;
-    left: -4px;
-    border: 4px solid transparent;
-    border-top-color: #00AD4D;
-    border-bottom-color: #00AD4D;
-    -webkit-animation: spinny 1s linear infinite;
-    animation: spinny 1s linear infinite;
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  border: 4px solid transparent;
+  border-top-color: #00AD4D;
+  border-bottom-color: #00AD4D;
+  -webkit-animation: spinny 1s linear infinite;
+  animation: spinny 1s linear infinite;
 }
 
 @-webkit-keyframes spinny {
-    0% {
-        -webkit-transform: rotate(0deg) scale(1);
-        transform: rotate(0deg) scale(1);
-    }
-    50% {
-        -webkit-transform: rotate(45deg) scale(1.2);
-        transform: rotate(45deg) scale(1.2);
-    }
-    100% {
-        -webkit-transform: rotate(360deg) scale(1);
-        transform: rotate(360deg) scale(1);
-    }
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    -webkit-transform: rotate(45deg) scale(1.2);
+    transform: rotate(45deg) scale(1.2);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+    transform: rotate(360deg) scale(1);
+  }
 }
 
 @keyframes spinny {
-    0% {
-        -webkit-transform: rotate(0deg) scale(1);
-        transform: rotate(0deg) scale(1);
-    }
-    50% {
-        -webkit-transform: rotate(45deg) scale(1.2);
-        transform: rotate(45deg) scale(1.2);
-    }
-    100% {
-        -webkit-transform: rotate(360deg) scale(1);
-        transform: rotate(360deg) scale(1);
-    }
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+  }
+  50% {
+    -webkit-transform: rotate(45deg) scale(1.2);
+    transform: rotate(45deg) scale(1.2);
+  }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+    transform: rotate(360deg) scale(1);
+  }
 }
 
 .preloader {
-    z-index: 10000;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, .7);
-    position: absolute;
-    ;
+  z-index: 10000;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, .7);
+  position: absolute;
+  ;
 }
 
 .menu-container {
-    bottom: 20;
-    left: 20;
-    position: absolute;
-    box-sizing: border-box;
+  bottom: 20;
+  left: 20;
+  position: absolute;
+  box-sizing: border-box;
 }
 
 .menu-btn {
-    background-color: rgba(88, 89, 91, 0.2);
-    font-size: 22px;
-    padding: 5px 10px;
-    margin: 10px;
-    border: 1px #58595B solid;
+  background-color: rgba(88, 89, 91, 0.2);
+  font-size: 22px;
+  padding: 5px 10px;
+  margin: 10px;
+  border: 1px #58595B solid;
 }
 
 .menu-btn:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .game-title {
-    position: absolute;
-    top: calc(50% - 33px);
-    left: 0;
-    width: 100%;
-    font-size: 39px;
-    text-align: center;
-    padding: 10px 0;
-    background-color: rgba(88, 89, 91, 0.1);
+  position: absolute;
+  top: calc(50% - 33px);
+  left: 0;
+  width: 100%;
+  font-size: 39px;
+  text-align: center;
+  padding: 10px 0;
+  background-color: rgba(88, 89, 91, 0.1);
 }
 
 .popup {
-    display: none;
-    position: absolute;
-    ;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: #021725;
-    opacity: 1;
+  display: none;
+  position: absolute;
+  ;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: #021725;
+  opacity: 1;
 }
 
 .popup-close-btn {
-    top: 0;
-    right: 0;
-    box-sizing: border-box;
-    color: white;
-    position: absolute;
-    font-size: 30px;
-    padding-top: 4px;
-    background: rgba(0, 129, 180, 0.28);
-    width: 46px;
-    height: 46px;
-    text-align: center;
-    border: 4px rgba(255, 255, 255, 0.25) solid;
-    cursor: pointer;
+  top: 0;
+  right: 0;
+  box-sizing: border-box;
+  color: white;
+  position: absolute;
+  font-size: 30px;
+  padding-top: 4px;
+  background: rgba(0, 129, 180, 0.28);
+  width: 46px;
+  height: 46px;
+  text-align: center;
+  border: 4px rgba(255, 255, 255, 0.25) solid;
+  cursor: pointer;
 }
 
 .popup-title {
-    position: absolute;
-    height: 46px;
-    font-size: 24px;
-    line-height: 46px;
-    width: 60%;
-    text-align: center;
-    margin: 0 20% 0 20%;
-    border-bottom: 1px white solid;
+  position: absolute;
+  height: 46px;
+  font-size: 24px;
+  line-height: 46px;
+  width: 60%;
+  text-align: center;
+  margin: 0 20% 0 20%;
+  border-bottom: 1px white solid;
 }
 
 
 /*  Ripple */
 
 .ripple {
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.4);
-    transform: scale(0);
-    position: fixed;
-    opacity: 1;
-    z-index: 1000;
-    pointer-events: none;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.4);
+  transform: scale(0);
+  position: fixed;
+  opacity: 1;
+  z-index: 1000;
+  pointer-events: none;
 }
 
 .rippleEffect {
-    animation: rippleDrop .3s cubic-bezier(0.33, 0.84, 0.72, 0.31);
+  animation: rippleDrop .3s cubic-bezier(0.33, 0.84, 0.72, 0.31);
 }
 
 @keyframes rippleDrop {
-    100% {
-        transform: scale(0.1);
-        opacity: 0;
-    }
+  100% {
+    transform: scale(0.1);
+    opacity: 0;
+  }
 }
 
 .clickEffect {
-    animation: clickEffectOpacity .3s cubic-bezier(0.4, 0, 1, 1)
+  animation: clickEffectOpacity .3s cubic-bezier(0.4, 0, 1, 1)
 }
 
 @keyframes clickEffectOpacity {
-    0% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .game-singleplayer {
-    position: absolute;
-    height: calc(100% - 80px);
-    width: 100%;
-    margin-top: 47px;
+  position: absolute;
+  height: calc(100% - 80px);
+  width: 100%;
+  margin-top: 47px;
 }
 
 .score-singleplayer {
-    position: absolute;
-    bottom: 3px;
-    left: 5px;
-    font-size: 30px;
+  position: absolute;
+  bottom: 3px;
+  left: 5px;
+  font-size: 30px;
 }
 
 .singleplayer-game-over {
-    width: 100%;
-    margin-top: 47px;
-    text-align: center;
-    font-size: 51px;
+  width: 100%;
+  margin-top: 47px;
+  text-align: center;
+  font-size: 51px;
 }
 
 .game-singleplayer-question {
-    margin: 10px;
-    margin-top: 30px;
-    font-size: 24px;
+  margin: 10px;
+  margin-top: 30px;
+  font-size: 24px;
 }
 
 .game-singleplayer-answers {
-    margin: 10px;
-    position: absolute;
-    bottom: 0;
-    width: calc(100% - 20px);
-    bottom: 30px;
+  margin: 10px;
+  position: absolute;
+  bottom: 0;
+  width: calc(100% - 20px);
+  bottom: 30px;
 }
 
 .game-singleplayer-answer {
-    background-color: rgba(88, 89, 91, 0.2);
-    font-size: 18px;
-    padding: 5px 10px;
-    margin-top: 10px;
-    border: 1px #58595B solid;
+  background-color: rgba(88, 89, 91, 0.2);
+  font-size: 18px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border: 1px #58595B solid;
 }
 
 .game-singleplayer-answer:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .answer-advertisement {
-    height: 100px;
-    background: #1778cd;
+  height: 100px;
+  background: #1778cd;
 }
 
 .btn-start-game {
-    position: absolute;
-    box-sizing: border-box;
-    background-color: rgba(88, 89, 91, 0.2);
-    font-size: 30px;
-    padding: 5px 10px;
-    margin-top: 10px;
-    border: 1px #58595B solid;
-    width: 174px;
-    margin-left: calc(50% - 87px);
-    bottom: 60px;
-    cursor: pointer;
+  position: absolute;
+  box-sizing: border-box;
+  background-color: rgba(88, 89, 91, 0.2);
+  font-size: 30px;
+  padding: 5px 10px;
+  margin-top: 10px;
+  border: 1px #58595B solid;
+  width: 174px;
+  margin-left: calc(50% - 87px);
+  bottom: 60px;
+  cursor: pointer;
 }
 
 .profil-container {
-    position: absolute;
-    height: calc(100% - 80px);
-    width: 100%;
-    margin-top: 47px;
+  position: absolute;
+  height: calc(100% - 80px);
+  width: 100%;
+  margin-top: 47px;
 }
 
-.login-signup-input {
-    width: 100%;
-    margin-top: 20px;
-    background: none;
-    border: none;
-    color: rgba(255, 255, 255, 0.8);
-    border-bottom: 3px rgba(255, 255, 255, 0.3) solid;
-    line-height: 2;
-    font-size: 18px;
-    outline: none;
+.leaderboard-page {
+  position: absolute;
+  height: calc(100% - 80px);
+  width: 100%;
+  margin-top: 47px;
 }
 
-.login-signup-input:focus {
-    color: rgba(255, 255, 255, 1);
-    border-bottom: 3px rgba(255, 255, 255, 1) solid;
-}
-
-.login-form {
-    width: 90%;
-    margin: auto;
-    margin-top: 50px;
-}
-
-.login-btn {
-    box-sizing: border-box;
-    width: 100px;
-    background-color: rgba(88, 89, 91, 0.2);
-    font-size: 22px;
-    padding: 5px 10px;
-    margin: auto;
-    margin-top: 20px;
-    border: 1px #58595B solid;
+.leaderboard-table {
+  margin-left: 20px;
+  margin-right: 20px;
+  width: calc(100% - 40px);
+  text-align: center;
 }
