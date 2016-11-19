@@ -386,16 +386,14 @@ body {
   overflow-y: auto;
 }
 
-.multiplayer-btn-group{
-
-}
-
 .multiplayer-btn-new-game {
   height: 44px;
   line-height: 44px;
   background: rgba(0, 129, 180, 0.5);
   padding-left: 10px;
   padding-right: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .multiplayer-btn-new-game-text {
@@ -406,6 +404,30 @@ body {
 .multiplayer-btn-new-game-icon {
   float: right;
   font-size: 44px;
+}
+
+.multiplayer-btn-game-requests {
+  height: 44px;
+  line-height: 44px;
+  background: rgba(0, 129, 180, 0.5);
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.multiplayer-btn-game-requests-text {
+  float: left;
+  font-size: 18px;
+}
+
+.multiplayer-btn-game-requests-number-wrapper {
+  float: right;
+  font-size: 44px;
+}
+
+.multiplayer-btn-game-requests-number {
+  background: red;
 }
 
 
