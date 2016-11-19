@@ -49,13 +49,13 @@
     </div>
 
     <div class="popup popup-profil">
-      <div class="popup-title" data-bind="text: activeUser">Gast</div>
+      <div class="popup-title" data-bind="text: profil.currentUsername">Gast</div>
       <div class="popup-close-btn clickable" data-bind="click: closePopup">
         <i class="ion-android-close"></i>
       </div>
       <div class="profil-container">
         <div class="logout-form">
-          <div class="logout-btn" data-bind="click: logout">Logout</div>
+          <div class="logout-btn" data-bind="click: profil.logout">Logout</div>
         </div>
       </div>
     </div>
@@ -92,7 +92,7 @@
         <i class="ion-android-close"></i>
       </div>
       <div class="multiplayer-page">
-        <div class="multiplayer-welcome-message">Logged in as <span class="multiplayer-welcome-message-playername">Playername</span></div>
+        <div class="multiplayer-welcome-message">Logged in as <span class="multiplayer-welcome-message-playername" data-bind="text: profil.currentUsername">Playername</span></div>
         <div class="multiplayer-btn-group-list">
           <div class="multiplayer-btn-group-item multiplayer-btn-new-game clickable">
             <div class="multiplayer-btn-new-game-text">start a new game</div>
@@ -163,6 +163,7 @@
   <script type="text/javascript" src="../js/game.js"></script>
   <script type="text/javascript" src="../js/utilities.js"></script>
   <script type="text/javascript" src="../js/classes/viewModelMain.js"></script>
+  <script type="text/javascript" src="../js/classes/viewModelProfil.js"></script>
   <script type="text/javascript" src="../js/classes/viewModelSinglePlayer.js"></script>
   <script type="text/javascript" src="../js/classes/viewModelMultiPlayer.js"></script>
   <script type="text/javascript" src="../js/classes/viewModelLeaderboard.js"></script>
