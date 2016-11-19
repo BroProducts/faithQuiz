@@ -1,22 +1,25 @@
 //Preloader
 app.showPreloader = function () {
-  $('.preloader').fadeIn()
-}
+  $('.preloader').fadeIn();
+};
 app.hidePreloader = function () {
-  $('.preloader').fadeOut()
-}
+  $('.preloader').fadeOut();
+};
 
 app.showPreloaderFast = function () {
-  $('.preloader').show()
-}
+  $('.preloader').show();
+};
 app.hidePreloaderFast = function () {
-  $('.preloader').hide()
-}
+  $('.preloader').hide();
+};
 
 $(document).on('click', '.clickable', function(el) {
-  $('.clickEffect').removeClass('clickEffect')
-  $(this).addClass('clickEffect')
-})
+  $('.clickEffect').removeClass('clickEffect');
+  $(this).addClass('clickEffect');
+  setTimeout(function(){
+    $('.clickEffect').removeClass('clickEffect');
+  },300);
+});
 
 //Touch Ripple Feedback
 $('body').click(function (e) {
