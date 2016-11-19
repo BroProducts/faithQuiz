@@ -397,7 +397,7 @@ hr {
   font-size: 15px;
 }
 
-.multiplayer-welcome-message-playername{
+.multiplayer-welcome-message-playername {
   font-weight: bold;
 }
 
@@ -416,9 +416,9 @@ hr {
 }
 
 .multiplayer-btn-new-game {
-  height: 44px;
-  line-height: 44px;
-  background: rgba(0,173,77,0.8);
+  height: 50px;
+  line-height: 50px;
+  background: rgba(0, 173, 77, 0.8);
   padding-left: 10px;
   padding-right: 10px;
 }
@@ -430,9 +430,9 @@ hr {
 
 .multiplayer-btn-new-game-icon {
   float: right;
-  font-size: 44px;
+  font-size: 50px;
   padding-left: 15px;
-  border-left: 1px dashed rgba(0,0,0,0.5);
+  border-left: 1px dashed rgba(0, 0, 0, 0.5);
 }
 
 .multiplayer-btn-game-requests {
