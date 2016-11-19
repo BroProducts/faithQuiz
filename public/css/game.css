@@ -340,6 +340,40 @@ body {
   margin-top: 47px;
 }
 
+.login-signup-input {
+  width: 100%;
+  margin-top: 20px;
+  background: none;
+  border: none;
+  color: rgba(255, 255, 255, 0.8);
+  border-bottom: 3px rgba(255, 255, 255, 0.3) solid;
+  line-height: 2;
+  font-size: 18px;
+  outline: none;
+}
+
+.login-signup-input:focus {
+  color: rgba(255, 255, 255, 1);
+  border-bottom: 3px rgba(255, 255, 255, 1) solid;
+}
+
+.login-form {
+  width: 90%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.login-btn {
+  box-sizing: border-box;
+  width: 100px;
+  background-color: rgba(88, 89, 91, 0.2);
+  font-size: 22px;
+  padding: 5px 10px;
+  margin: auto;
+  margin-top: 20px;
+  border: 1px #58595B solid;
+}
+
 
 /*--- Multiplayer ---*/
 
