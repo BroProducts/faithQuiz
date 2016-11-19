@@ -392,6 +392,10 @@ hr {
   overflow-y: auto;
 }
 
+.multiplayer-btn-group-list{
+  margin-top: 10px;
+}
+
 .multiplayer-btn-group-list .multiplayer-btn-group-item:first-child {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -444,6 +448,10 @@ hr {
   margin-bottom: 7px;
   line-height: 30px;
   text-align: -webkit-center;
+}
+
+.multiplayer-ongoing-games-wrapper{
+  margin-top: 10px;
 }
 
 .multiplayer-ongoing-games-wrapper .multiplayer-ongoing-game:first-child {
