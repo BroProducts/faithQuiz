@@ -264,6 +264,9 @@ body {
   }
 }
 
+
+/*--- Singleplayer ---*/
+
 .game-singleplayer {
   position: absolute;
   height: calc(100% - 80px);
@@ -336,6 +339,19 @@ body {
   width: 100%;
   margin-top: 47px;
 }
+
+
+/*--- Multiplayer ---*/
+
+.multiplayer-page {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin-top: 47px;
+}
+
+
+/*--- Leaderboard ---*/
 
 .leaderboard-page {
   position: absolute;
