@@ -395,8 +395,8 @@ body {
 }
 
 .leaderboard-table {
-  margin-left: 20px;
-  margin-right: 20px;
-  width: calc(100% - 40px);
+  margin-left: 5px;
+  margin-right: 5px;
+  width: calc(100% - 10px);
   text-align: center;
 }
