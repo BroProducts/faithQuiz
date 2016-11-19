@@ -57,11 +57,11 @@ body {
     width: 6px!important;
     height: 6px!important;
 }
-Pseudo ::scrollbar-thumb element
+
 *::-webkit-scrollbar-thumb {
     background-color: rgba(0,0,0,.2);
 }
-Pseudo ::scrollbar-track element
+
 *::-webkit-scrollbar-track {
     background: rgba(255,255,255,.08);
 }
