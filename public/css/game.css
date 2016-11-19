@@ -427,6 +427,8 @@ hr {
 .multiplayer-btn-new-game-icon {
   float: right;
   font-size: 44px;
+  padding-left: 15px;
+  border-left: 1px dashed rgba(0,0,0,0.5);
 }
 
 .multiplayer-btn-game-requests {
