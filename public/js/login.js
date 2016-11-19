@@ -11,8 +11,9 @@ function login() {
     'password': document.getElementById("password").value
     }).then(function(result){
     console.log('Authenticated!', result);
-    window.location = "game.html" 
+    window.location = "game.html"
     }).catch(function(error){
     console.error('Error authenticating!', error);
+    alert('Username or Password wrong');
     });
 }
