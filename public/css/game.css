@@ -440,6 +440,24 @@ hr {
   text-align: -webkit-center;
 }
 
+.multiplayer-ongoing-games-wrapper .multiplayer-ongoing-game:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.multiplayer-ongoing-games-wrapper .multiplayer-ongoing-game:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.multiplayer-ongoing-game {
+  height: 44px;
+  line-height: 44px;
+  background: rgba(0, 129, 180, 0.5);
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 
 /*--- Leaderboard ---*/
 
