@@ -229,12 +229,10 @@ hr {
   color: white;
   position: absolute;
   font-size: 30px;
-  padding-top: 4px;
-  background: rgba(0, 129, 180, 0.28);
+  padding-top: 8px;
   width: 46px;
   height: 46px;
   text-align: center;
-  border: 4px rgba(255, 255, 255, 0.25) solid;
   cursor: pointer;
 }
 
@@ -243,11 +241,10 @@ hr {
   height: 46px;
   font-size: 24px;
   line-height: 46px;
-  width: 60%;
+  width: 100%;
   text-align: center;
-  margin: 0 20% 0 20%;
+  background: black;
   box-sizing: border-box;
-  border-bottom: 1px white solid;
 }
 
 
