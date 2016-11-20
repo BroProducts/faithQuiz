@@ -390,7 +390,6 @@ hr {
   margin-right: 10px;
   margin-top: 47px;
   overflow-y: auto;
-  display: none;
 }
 
 .multiplayer-welcome-message {
@@ -573,6 +572,7 @@ hr {
   margin-right: 10px;
   margin-top: 47px;
   overflow-y: auto;
+  display: none;
 }
 
 
