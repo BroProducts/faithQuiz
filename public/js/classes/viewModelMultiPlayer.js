@@ -10,7 +10,7 @@ app.ViewModelMultiPlayer = function() {
   var $newGamePage = $('.multiplayer-page-new-game');
   var $ongoingGamePage = $('.multiplayer-page-ongoing-game');
 
-  vm.openNewGamePage = function() {
+  vm.showNewGamePage = function() {
     $menuPage.fadeOut();
     $newGamePage.fadeIn();
   };
