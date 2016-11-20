@@ -15,7 +15,7 @@ app.ViewModelMain = function() {
     if (myScroll) {
       myScroll.destroy();
     }
-    myScroll = = new IScroll('.multiplayer-page-menu', {
+    myScroll = new IScroll('.multiplayer-page-menu', {
       mouseWheel: true,
       scrollbars: true,
       fadeScrollbars: true,
