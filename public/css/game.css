@@ -479,7 +479,6 @@ hr {
   height: 44px;
   line-height: 44px;
   background: rgba(0, 129, 180, 0.5);
-  padding-left: 5px;
   padding-right: 10px;
 }
 
@@ -493,6 +492,8 @@ hr {
   height: 44px;
   width: 44px;
   border-radius: 22px;
+  box-sizing: border-box;
+  padding: 3px;
 }
 
 .multiplayer-ongoing-game-middle {
