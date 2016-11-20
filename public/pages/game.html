@@ -99,14 +99,14 @@
 
         <!-- New Game/game request btns -->
         <div class="multiplayer-btn-group-list">
-          <div class="multiplayer-btn-group-item multiplayer-btn-new-game clickable">
+          <div class="multiplayer-btn-group-item multiplayer-btn-new-game clickable" data-bind="click: multiPlayer.openNewGamePage">
             <div class="multiplayer-btn-new-game-text">start a new game</div>
             <div class="multiplayer-btn-new-game-icon">
               <i class="ion-ios-play-outline"></i>
             </div>
           </div>
           <hr>
-          <div class="multiplayer-btn-group-item multiplayer-btn-game-requests clickable">
+          <div class="multiplayer-btn-group-item multiplayer-btn-game-requests clickable" data-bind="click: multiPlayer.showGameRequest">
             <div class="multiplayer-btn-game-requests-text">game requests</div>
             <div class="multiplayer-btn-game-requests-number">4</div>
           </div>
