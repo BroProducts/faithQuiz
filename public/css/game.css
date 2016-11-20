@@ -540,6 +540,7 @@ hr {
 
 .multiplayer-match-history-wrapper {
   margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .multiplayer-match-history-wrapper .multiplayer-match-history:first-child {
