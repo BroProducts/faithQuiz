@@ -71,10 +71,6 @@ body {
   -webkit-touch-callout: none;
 }
 
-*::-webkit-scrollbar-track { 
-    background-color: #ffffff;
-}
-
 hr {
   margin: 0;
   border: 0;
