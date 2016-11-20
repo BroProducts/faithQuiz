@@ -106,7 +106,7 @@
             </div>
           </div>
           <hr>
-          <div class="multiplayer-btn-group-item multiplayer-btn-game-requests clickable" data-bind="click: multiPlayer.showGameRequest">
+          <div class="multiplayer-btn-group-item multiplayer-btn-game-requests clickable" data-bind="click: multiPlayer.showGameRequestPage">
             <div class="multiplayer-btn-game-requests-text">game requests</div>
             <div class="multiplayer-btn-game-requests-number">4</div>
           </div>
@@ -118,7 +118,7 @@
             <div class="multiplayer-ongoing-game-left">
               <img class="multiplayer-ongoing-game-img" src="http://cdn-mf0.heartyhosting.com/sites/mensfitness.com/files/marijuana_weed_smoking_pot_cannabis_main_0.jpg">
             </div>
-            <div class="multiplayer-ongoing-game-middle">Spiel1</div>
+            <div class="multiplayer-ongoing-game-middle">Gegenspielername 1</div>
             <div class="multiplayer-ongoing-game-right">
               <div class="multiplayer-ongoing-game-time">12 Min</div>
             </div>
@@ -128,7 +128,7 @@
             <div class="multiplayer-ongoing-game-left">
               <img class="multiplayer-ongoing-game-img" src="http://cdn-mf0.heartyhosting.com/sites/mensfitness.com/files/marijuana_weed_smoking_pot_cannabis_main_0.jpg">
             </div>
-            <div class="multiplayer-ongoing-game-middle">Spiel1</div>
+            <div class="multiplayer-ongoing-game-middle">Gegenspielername 2</div>
             <div class="multiplayer-ongoing-game-right">
               <div class="multiplayer-ongoing-game-time">12 Min</div>
             </div>
@@ -136,21 +136,27 @@
         </div>
 
         <!-- yout game requests -->
-        <div class="multiplayer-btn-your-game-requests clickable">
-          <div class="multiplayer-btn-your-game-requests-text" data-bind="click: multiPlayer.showYourGameRequest">your game requests</div>
+        <div class="multiplayer-btn-your-game-requests clickable" data-bind="click: multiPlayer.showYourGameRequestPage">
+          <div class="multiplayer-btn-your-game-requests-text">your game requests</div>
           <div class="multiplayer-btn-your-game-requests-number">9</div>
         </div>
 
         <!-- game history -->
         <div class="multiplayer-match-history-wrapper">
-          <div class="multiplayer-match-history clickable" data-bind="click: multiPlayer.showMatchHistory">Match History</div>
+          <div class="multiplayer-match-history clickable" data-bind="click: multiPlayer.showMatchHistoryPage">Match History</div>
         </div>
       </div>
 
       <!-- New Game Page -->
       <div class="multiplayer-page-new-game">
         new game bro
-        <div data-bind="click: multiPlayer.closeNewGamePage">close new game page</div>
+        <div data-bind="click: multiPlayer.closeNewGamePage">close new page</div>
+      </div>
+
+      <!-- ongoing Game Page -->
+      <div class="multiplayer-page-ongoing-game">
+        ongoing game bro
+        <div data-bind="click: multiPlayer.closeOngoingGamePage">close ongoing page</div>
       </div>
     </div>
 

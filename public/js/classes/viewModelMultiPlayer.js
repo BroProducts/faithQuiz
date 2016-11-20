@@ -19,15 +19,23 @@ app.ViewModelMultiPlayer = function() {
     $menuPage.fadeIn();
   }
 
-  vm.showGameRequest = function() {
+  vm.showGameRequestPage = function() {
     console.log('show game requests');
   };
 
-  vm.showYourGameRequest = function() {
+  vm.showOngoingGamePage = function() {
+    console.log('show game requests');
+  };
+
+  vm.closeOngoingGamePage = function(){
+
+  };
+
+  vm.showYourGameRequestPage = function() {
     console.log('show your game requests');
   };
 
-  vm.showMatchHistory = function() {
+  vm.showMatchHistoryPage = function() {
     console.log('show match history');
   };
 
