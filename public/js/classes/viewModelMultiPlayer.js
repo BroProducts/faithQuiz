@@ -20,7 +20,15 @@ app.ViewModelMultiPlayer = function() {
   }
 
   vm.showGameRequest = function() {
-    console.log('show game request');
+    console.log('show game requests');
+  };
+
+  vm.showYourGameRequest = function() {
+    console.log('show your game requests');
+  };
+
+  vm.showMatchHistory = function() {
+    console.log('show match history');
   };
 
   console.log('MultiPlayer ViewModel loaded');
