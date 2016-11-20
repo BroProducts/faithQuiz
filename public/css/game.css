@@ -562,6 +562,34 @@ hr {
 }
 
 
+/*--- Multiplayer page new game ---*/
+
+.multiplayer-page-new-game {
+  position: absolute;
+  height: calc(100% - 47px);
+  width: calc(100% - 20px);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 47px;
+  overflow-y: auto;
+  display: none;
+}
+
+
+/*--- Multiplayer page game requests ---*/
+
+.multiplayer-page-game-requests {
+  position: absolute;
+  height: calc(100% - 47px);
+  width: calc(100% - 20px);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 47px;
+  overflow-y: auto;
+  display: none;
+}
+
+
 /*--- Multiplayer page ongoing game ---*/
 
 .multiplayer-page-ongoing-game {
@@ -576,9 +604,23 @@ hr {
 }
 
 
-/*--- Multiplayer page new game ---*/
+/*--- Multiplayer page your game requests ---*/
 
-.multiplayer-page-new-game {
+.multiplayer-page-your-game-requests {
+  position: absolute;
+  height: calc(100% - 47px);
+  width: calc(100% - 20px);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 47px;
+  overflow-y: auto;
+  display: none;
+}
+
+
+/*--- Multiplayer page match history ---*/
+
+.multiplayer-page-match-history {
   position: absolute;
   height: calc(100% - 47px);
   width: calc(100% - 20px);
