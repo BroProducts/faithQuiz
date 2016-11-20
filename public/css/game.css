@@ -483,6 +483,32 @@ hr {
   padding-right: 10px;
 }
 
+.multiplayer-ongoing-game-left {
+  height: 44px;
+  width: 44px;
+  float: left;
+}
+
+.multiplayer-ongoing-game-img {
+  height: 44px;
+  width: 44px;
+  border-radius: 22px;
+}
+
+.multiplayer-ongoing-game-middle {
+  float: left;
+}
+
+.multiplayer-ongoing-game-right {
+  float: right;
+}
+
+.multiplayer-ongoing-game-time {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 23px;
+}
+
 .multiplayer-btn-your-game-requests {
   margin-top: 10px;
   height: 44px;
