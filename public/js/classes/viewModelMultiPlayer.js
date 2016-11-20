@@ -13,6 +13,9 @@ app.ViewModelMultiPlayer = function() {
   var $yourGameRequestsPage = $('.multiplayer-page-your-game-requests');
   var $matchHistoryPage = $('.multiplayer-page-match-history');
 
+  //Init iScroll
+  this.iScrollMenuPage = new IScroll($menuPage);
+
   vm.showNewGamePage = function() {
     $menuPage.fadeOut();
     $newGamePage.fadeIn();
