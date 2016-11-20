@@ -389,7 +389,7 @@ hr {
   padding-left: 10px;
   padding-right: 10px;
   margin-top: 46px;
-  overflow-y: auto;
+  overflow: hidden;
 }
 
 .multiplayer-welcome-message {
