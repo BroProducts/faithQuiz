@@ -384,9 +384,10 @@ hr {
 .multiplayer-page-menu {
   position: absolute;
   height: calc(100% - 47px);
-  width: calc(100% - 20px);
-  margin-left: 10px;
-  margin-right: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-top: 47px;
   overflow-y: auto;
 }
@@ -566,9 +567,10 @@ hr {
 .multiplayer-page-new-game {
   position: absolute;
   height: calc(100% - 47px);
-  width: calc(100% - 20px);
-  margin-left: 10px;
-  margin-right: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-top: 47px;
   overflow-y: auto;
   display: none;
@@ -580,9 +582,10 @@ hr {
 .multiplayer-page-game-requests {
   position: absolute;
   height: calc(100% - 47px);
-  width: calc(100% - 20px);
-  margin-left: 10px;
-  margin-right: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-top: 47px;
   overflow-y: auto;
   display: none;
@@ -594,9 +597,10 @@ hr {
 .multiplayer-page-ongoing-game {
   position: absolute;
   height: calc(100% - 47px);
-  width: calc(100% - 20px);
-  margin-left: 10px;
-  margin-right: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-top: 47px;
   overflow-y: auto;
   display: none;
@@ -608,9 +612,10 @@ hr {
 .multiplayer-page-your-game-requests {
   position: absolute;
   height: calc(100% - 47px);
-  width: calc(100% - 20px);
-  margin-left: 10px;
-  margin-right: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-top: 47px;
   overflow-y: auto;
   display: none;
@@ -622,9 +627,10 @@ hr {
 .multiplayer-page-match-history {
   position: absolute;
   height: calc(100% - 47px);
-  width: calc(100% - 20px);
-  margin-left: 10px;
-  margin-right: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
   margin-top: 47px;
   overflow-y: auto;
   display: none;
