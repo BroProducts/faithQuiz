@@ -66,6 +66,10 @@ body {
   background: rgba(255, 255, 255, 0.18);
 }
 
+.iScrollVerticalScrollbar{
+  color: red;
+}
+
 hr {
   margin: 0;
   border: 0;

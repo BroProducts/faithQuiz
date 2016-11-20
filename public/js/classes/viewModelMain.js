@@ -18,7 +18,7 @@ app.ViewModelMain = function() {
     myScroll = new IScroll('.multiplayer-page-menu', {
       mouseWheel: true,
       scrollbars: true,
-      fadeScrollbars: true,
+      //fadeScrollbars: true,
       shrinkScrollbars: 'scale'
     });
   }
