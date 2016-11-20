@@ -380,9 +380,9 @@ hr {
 }
 
 
-/*--- Multiplayer ---*/
+/*--- Multiplayer page menu ---*/
 
-.multiplayer-page {
+.multiplayer-page-menu {
   position: absolute;
   height: calc(100% - 47px);
   width: calc(100% - 20px);
@@ -561,9 +561,17 @@ hr {
   font-size: 18px;
 }
 
+
 /*--- Multiplayer page new game ---*/
-.multiplayer-page-new-game{
-  display: block;
+
+.multiplayer-page-new-game {
+  position: absolute;
+  height: calc(100% - 47px);
+  width: calc(100% - 20px);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 47px;
+  overflow-y: auto;
 }
 
 
