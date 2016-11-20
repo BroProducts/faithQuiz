@@ -49,7 +49,7 @@ app.ViewModelMultiPlayer = function() {
   };
 
   vm.closeYourGameRequestsPage = function() {
-    $gameYourRequestsPage.fadeOut();
+    $yourGameRequestsPage.fadeOut();
     $menuPage.fadeIn();
   };
 
