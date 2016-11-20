@@ -249,6 +249,7 @@ hr {
   width: 60%;
   text-align: center;
   margin: 0 20% 0 20%;
+  box-sizing: border-box;
   border-bottom: 1px white solid;
 }
 
