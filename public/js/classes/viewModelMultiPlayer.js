@@ -7,7 +7,8 @@ app.ViewModelMultiPlayer = function() {
   vm.friendslist = ko.observableArray();
 
   var $menuPage = $('.multiplayer-page-menu');
-  var $newGamePage = $('.multiplayer-page-new-game')
+  var $newGamePage = $('.multiplayer-page-new-game');
+  var $ongoingGamePage = $('.multiplayer-page-ongoing-game');
 
   vm.openNewGamePage = function() {
     $menuPage.fadeOut();
@@ -24,11 +25,13 @@ app.ViewModelMultiPlayer = function() {
   };
 
   vm.showOngoingGamePage = function() {
-    console.log('show game requests');
+    $menuPage.fadeOut();
+    $ongoingGamePage.fadeIn();
   };
 
-  vm.closeOngoingGamePage = function(){
-
+  vm.closeOngoingGamePage = function() {
+    $ongoingGamePage.fadeOut();
+    $menuPage.fadeIn();
   };
 
   vm.showYourGameRequestPage = function() {

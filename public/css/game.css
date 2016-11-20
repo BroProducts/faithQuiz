@@ -562,6 +562,20 @@ hr {
 }
 
 
+/*--- Multiplayer page ongoing game ---*/
+
+.multiplayer-page-ongoing-game {
+  position: absolute;
+  height: calc(100% - 47px);
+  width: calc(100% - 20px);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 47px;
+  overflow-y: auto;
+  display: none;
+}
+
+
 /*--- Multiplayer page new game ---*/
 
 .multiplayer-page-new-game {
