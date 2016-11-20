@@ -9,8 +9,18 @@ app.ViewModelMain = function() {
   vm.openSingleplayer = function() {
     $('.popup-singleplayer').fadeIn()
   }
+  var myScroll;
   vm.openMultiplayer = function() {
     $('.popup-multiplayer').fadeIn()
+    if (myScroll) {
+      myScroll.destroy();
+    }
+    myScroll = = new IScroll('.multiplayer-page-menu', {
+      mouseWheel: true,
+      scrollbars: true,
+      fadeScrollbars: true,
+      shrinkScrollbars: 'scale'
+    });
   }
   vm.openLeaderboard = function() {
     $('.popup-leaderboard').fadeIn()
