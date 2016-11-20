@@ -425,7 +425,7 @@ hr {
 
 .multiplayer-btn-new-game-text {
   float: left;
-  font-size: 18px;
+  font-size: 22px;
 }
 
 .multiplayer-btn-new-game-icon {
@@ -449,7 +449,7 @@ hr {
 }
 
 .multiplayer-btn-game-requests-number {
-  background: rgba(255,0,0,0.8);
+  background: rgba(255, 0, 0, 0.8);
   float: right;
   font-size: 22px;
   height: 30px;
@@ -499,7 +499,7 @@ hr {
 }
 
 .multiplayer-btn-your-game-requests-number {
-  background: rgba(255,0,0,0.8);
+  background: rgba(255, 0, 0, 0.8);
   float: right;
   font-size: 22px;
   height: 30px;
@@ -511,7 +511,7 @@ hr {
   text-align: -webkit-center;
 }
 
-.multiplayer-match-history-wrapper{
+.multiplayer-match-history-wrapper {
   margin-top: 10px;
 }
 
@@ -525,13 +525,15 @@ hr {
   border-bottom-right-radius: 5px;
 }
 
-.multiplayer-match-history{
+.multiplayer-match-history {
   height: 44px;
   line-height: 44px;
   background: rgba(0, 129, 180, 0.5);
   padding-left: 10px;
   padding-right: 10px;
+  font-size: 18px;
 }
+
 
 /*--- Leaderboard ---*/
 
