@@ -390,7 +390,8 @@ hr {
   padding-left: 10px;
   padding-right: 10px;
   margin-top: 46px;
-  overflow-y: auto;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .multiplayer-welcome-message {
