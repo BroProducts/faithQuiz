@@ -511,21 +511,21 @@ hr {
   text-align: -webkit-center;
 }
 
-.multiplayer-game-history-wrapper{
+.multiplayer-match-history-wrapper{
   margin-top: 10px;
 }
 
-.multiplayer-game-history-wrapper .multiplayer-completed-game:first-child {
+.multiplayer-match-history-wrapper .multiplayer-match-history:first-child {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
-.multiplayer-game-history-wrapper .multiplayer-completed-game:last-child {
+.multiplayer-match-history-wrapper .multiplayer-match-history:last-child {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
 }
 
-.multiplayer-completed-game{
+.multiplayer-match-history{
   height: 44px;
   line-height: 44px;
   background: rgba(0, 129, 180, 0.5);
