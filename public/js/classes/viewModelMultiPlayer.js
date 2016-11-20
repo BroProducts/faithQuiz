@@ -23,12 +23,12 @@ app.ViewModelMultiPlayer = function() {
     $menuPage.fadeIn();
   }
 
-  vm.showGameRequestPage = function() {
+  vm.showGameRequestsPage = function() {
     $menuPage.fadeOut();
     $gameRequestsPage.fadeIn();
   };
 
-  vm.closeGameRequestPage = function() {
+  vm.closeGameRequestsPage = function() {
     $gameRequestsPage.fadeOut();
     $menuPage.fadeIn();
   };
@@ -43,12 +43,12 @@ app.ViewModelMultiPlayer = function() {
     $menuPage.fadeIn();
   };
 
-  vm.showYourGameRequestPage = function() {
+  vm.showYourGameRequestsPage = function() {
     $menuPage.fadeOut();
-    $gameYourRequestsPage.fadeIn();
+    $yourGameRequestsPage.fadeIn();
   };
 
-  vm.closeYourGameRequestPage = function() {
+  vm.closeYourGameRequestsPage = function() {
     $gameYourRequestsPage.fadeOut();
     $menuPage.fadeIn();
   };
