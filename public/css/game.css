@@ -208,9 +208,9 @@ hr {
   position: absolute;
   z-index: 1;
   left: 0;
-  top: 20px;
+  top: 0;
   width: 100%;
-  height: calc(100% - 20px);
+  height: 100%;
   overflow: auto;
   background-color: #021725;
   opacity: 1;
