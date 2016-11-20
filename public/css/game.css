@@ -561,6 +561,11 @@ hr {
   font-size: 18px;
 }
 
+/*--- Multiplayer page new game ---*/
+.multiplayer-page-new-game{
+  display: block;
+}
+
 
 /*--- Leaderboard ---*/
 
