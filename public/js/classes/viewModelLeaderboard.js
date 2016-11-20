@@ -5,7 +5,6 @@ app.ViewModelLeaderboard = function() {
 
   vm.start = function() {
     vm.leaderboardloaded(false);
-    console.log("start")
     leaderboardService.find({
       query: {
         $sort: {
@@ -25,4 +24,5 @@ app.ViewModelLeaderboard = function() {
     });
   };
   vm.start();
+  console.log("leaderboard viewmodel loaded")
 };
