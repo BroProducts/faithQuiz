@@ -12,9 +12,6 @@ app.ViewModelMain = function() {
   vm.openMultiplayer = function() {
     $('.popup-multiplayer').fadeIn()
   }
-  vm.openLeaderboard = function() {
-    $('.popup-leaderboard').fadeIn()
-  }
   vm.profil = new app.ViewModelProfil();
   vm.singlePlayer = new app.ViewModelSinglePlayer();
   vm.multiPlayer = new app.ViewModelMultiPlayer();
