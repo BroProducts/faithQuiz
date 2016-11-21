@@ -15,7 +15,7 @@ app.ViewModelLeaderboard = function() {
       }
     }).then(function(page) {
       console.log(page)
-
+      vm.leaderboarddata([])
       for (var i = 0; i < page.data.length; i++) {
         var leaderboard = new app.leaderboard(page.data[i]);
         console.log(leaderboard)

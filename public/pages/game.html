@@ -179,28 +179,24 @@
         <i class="ion-android-close"></i>
       </div>
       <div class="leaderboard-page">
-        <table class="leaderboard-table">
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Username</th>
-              <th>Score</th>
-              <th>Date</th>
-            </tr>
-          </thead>
-          <tbody>
+        <div class="leaderboard-table">
+          <div class="learboard-table-head">
+            <div>#</div>
+            <div>Username</div>
+            <div>Score</div>
+            <div>Date</div>
+          </div>
+          <div class="learboard-table-body">
             <!-- ko if: leaderboard.leaderboardloaded() == true -->
             <!-- ko foreach: leaderboard.leaderboarddata() -->
-            <tr>
-              <td data-bind="text: $index"></td>
-              <td data-bind="text: username"></td>
-              <td data-bind="text: score"></td>
-              <td data-bind="text: date"></td>
-            </tr>
+            <div data-bind="text: $index + 1"></div>
+            <div data-bind="text: username"></div>
+            <div data-bind="text: score"></div>
+            <div data-bind="text: date"></div>
             <!-- /ko -->
             <!-- /ko -->
-          </tbody>
-        </table>
+          </div>
+        </div>
       </div>
     </div>
 
