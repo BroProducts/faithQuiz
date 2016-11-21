@@ -679,6 +679,11 @@ hr {
 
 .leaderboard-table-body-row {
   width: 100%;
+  height: 19px;
+}
+
+.leaderboard-table-body-row.my-score {
+  background: rgba(239, 120, 35, 0.4);
 }
 
 .leaderboard-table-body-row-item {
