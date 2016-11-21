@@ -679,11 +679,11 @@ hr {
 
 .leaderboard-table-body-row {
   width: 100%;
-  height: 19px;
+  height: 20px;
 }
 
 .leaderboard-table-body-row.myscore {
-  background: rgba(239, 120, 35, 0.4);
+  background: rgba(88, 89, 91, 0.2);
 }
 
 .leaderboard-table-body-row-item {
