@@ -3,6 +3,7 @@ app.ViewModelLeaderboard = function() {
   vm.leaderboardloaded = ko.observable(false);
   vm.leaderboarddata = ko.observableArray();
 
+  var $leaderboardPopup = $('.popup-leaderboard')
   vm.start = function() {
     vm.leaderboardloaded(false);
     leaderboardService.find({
@@ -10,7 +11,7 @@ app.ViewModelLeaderboard = function() {
         $sort: {
           score: -1
         },
-        $limit: 10
+        $limit: 50
       }
     }).then(function(page) {
       console.log(page)
@@ -24,5 +25,11 @@ app.ViewModelLeaderboard = function() {
     });
   };
   vm.start();
+
+
+  vm.openLeaderboard = function() {
+    $leaderboardPopup.fadeIn()
+    vm.start();
+  }
   console.log("leaderboard viewmodel loaded")
 };
