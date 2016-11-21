@@ -72,6 +72,7 @@ module.exports = function(hook) {
               const sessionCollection = db.collection('sessions');              
               const leaderboadCollection = db.collection('leaderboards');
               if(questionsdone > 0){
+                console.log(hook.params.user)
                 leaderboadCollection.insert(
                   {
                     userid: hook.params.user._id.toString(),
