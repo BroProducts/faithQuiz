@@ -652,6 +652,7 @@ hr {
 
 .leaderboard-table {
   width: 100%;
+  text-align: center;
 }
 
 .learboard-table-head {
@@ -671,10 +672,18 @@ hr {
   height: calc(100% - 22px);
 }
 
-.leaderboard-table-body-row{
-
+.leaderboard-table-body-row {
+  width: 100%;
 }
 
-.leaderboard-table-body-row-item{
-
+.leaderboard-table-body-row-item {
+  float: left;
 }
+
+.leaderboard-table-nr {}
+
+.leaderboard-table-username {}
+
+.leaderboard-table-score {}
+
+.leaderboard-table-date {}
