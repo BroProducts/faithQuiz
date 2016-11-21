@@ -31,8 +31,9 @@ module.exports = function(hook) {
             bcrypt.hash(hook.data.password, salt, function(err, hash) {
               hook.data.username = hook.data.username.toLowerCase()
               hook.data.password = hash
-              var username = hook.data.username
-              hook.data.username = username.substring(0, 25)
+              var displayname = hook.data.username
+              hook.data.displayname = displayname
+              hook.data.username = displayname.substring(0, 25)
               resolve(hook);
             });
           });
