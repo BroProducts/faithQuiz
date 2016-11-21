@@ -23,8 +23,8 @@ module.exports = function(){
   app.use('/leaderboards', service({
     Model: db.collection('leaderboards'),
     paginate: {
-      default: 30,
-      max: 30
+      default: 50,
+      max: 50
     }
   }));
 
