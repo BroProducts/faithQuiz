@@ -189,10 +189,12 @@
           <div class="learboard-table-body">
             <!-- ko if: leaderboard.leaderboardloaded() == true -->
             <!-- ko foreach: leaderboard.leaderboarddata() -->
-            <div data-bind="text: $index() + 1"></div>
-            <div data-bind="text: username"></div>
-            <div data-bind="text: score"></div>
-            <div data-bind="text: date"></div>
+            <div class="leaderboard-table-body-row">
+              <div class="leaderboard-table-body-row-item" data-bind="text: $index() + 1"></div>
+              <div class="leaderboard-table-body-row-item" data-bind="text: username"></div>
+              <div class="leaderboard-table-body-row-item" data-bind="text: score"></div>
+              <div class="leaderboard-table-body-row-item" data-bind="text: date"></div>
+            </div>
             <!-- /ko -->
             <!-- /ko -->
           </div>
