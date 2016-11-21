@@ -19,19 +19,26 @@
 
   <!-- CSS -->
   <link rel="stylesheet" href="../css/login.css">
-
-  <script src="//unpkg.com/feathers-client@^1.0.0/dist/feathers.js"></script>
-  <script src="/socket.io/socket.io.js"></script>
-  <script src="../js/login.js"></script>
 </head>
 
 <body>
+  <div class="preloader">
+    <div class="spinner spinner-1"></div>
+  </div>
   <div class="login container">
-      <input class="block" type="text" id="username" placeholder="Username">
-      <input class="block" type="password" id="password" placeholder="Password">
-      <button type="submit" class="button button-primary block login" onclick="login()">Login</button>
+    <input class="block" type="text" id="username" placeholder="Username">
+    <input class="block" type="password" id="password" placeholder="Password">
+    <button type="submit" class="button button-primary block login" onclick="login()">Login</button>
     <a class="sub-link" href="signup.html">Signup</a>
   </div>
+
+  <!-- JavaScript Vendor -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+
+  <!-- JavaScript -->
+  <script src="//unpkg.com/feathers-client@^1.0.0/dist/feathers.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="../js/login.js"></script>
 </body>
 
 </html>
