@@ -656,19 +656,24 @@ hr {
 }
 
 .learboard-table-head {
-  width: 100%;
+  width: calc(100% - 10px);
+  padding-left: 5px;
+  padding-right: 5px;
   height: 22px;
   font-size: 18px;
 }
 
 .learboard-table-head-item {
   float: left;
+  overflow: hidden;
 }
 
 .learboard-table-body {
-  width: 100%;
+  width: calc(100% - 10px);
   overflow-x: hidden;
   overflow-y: auto;
+  padding-left: 5px;
+  padding-right: 5px;
   height: calc(100% - 22px);
 }
 
@@ -678,12 +683,21 @@ hr {
 
 .leaderboard-table-body-row-item {
   float: left;
+  overflow: hidden;
 }
 
-.leaderboard-table-nr {}
+.leaderboard-table-nr {
+  width: 10%;
+}
 
-.leaderboard-table-username {}
+.leaderboard-table-username {
+  width: 50%;
+}
 
-.leaderboard-table-score {}
+.leaderboard-table-score {
+  width: 15%;
+}
 
-.leaderboard-table-date {}
+.leaderboard-table-date {
+  width: 25%;
+}
