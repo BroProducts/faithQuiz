@@ -4,7 +4,7 @@ app.leaderboard = function(options) {
   this.username = options.username;
   this.date = datefull.getDay() + "/" + datefull.getMonth() + "/" + datefull.getFullYear();
   this.score = options.score;
-  this.currentUserScore = computed(function(){
+  this.currentUserScore = ko.computed(function(){
     if(self.username.toLocaleLowerCase() == app.vm.profil.currentUsername().toLocaleLowerCase()){
       return true;
     } else {
