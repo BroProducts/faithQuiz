@@ -181,15 +181,15 @@
       <div class="leaderboard-page">
         <div class="leaderboard-table">
           <div class="learboard-table-head">
-            <div>#</div>
-            <div>Username</div>
-            <div>Score</div>
-            <div>Date</div>
+            <div class="learboard-table-head-item">#</div>
+            <div class="learboard-table-head-item">Username</div>
+            <div class="learboard-table-head-item">Score</div>
+            <div class="learboard-table-head-item">Date</div>
           </div>
           <div class="learboard-table-body">
             <!-- ko if: leaderboard.leaderboardloaded() == true -->
             <!-- ko foreach: leaderboard.leaderboarddata() -->
-            <div data-bind="text: $index + 1"></div>
+            <div data-bind="text: $index() + 1"></div>
             <div data-bind="text: username"></div>
             <div data-bind="text: score"></div>
             <div data-bind="text: date"></div>

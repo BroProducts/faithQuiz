@@ -94,7 +94,7 @@ hr {
   }
 }
 
-.clickable{
+.clickable {
   cursor: pointer;
 }
 
@@ -651,8 +651,22 @@ hr {
 }
 
 .leaderboard-table {
-  margin-left: 10px;
-  margin-right: 10px;
-  width: calc(100% - 20px);
-  text-align: center;
+  width: 100%;
+}
+
+.learboard-table-head {
+  width: 100%;
+  height: 22px;
+  font-size: 18px;
+}
+
+.learboard-table-head-item {
+  float: left;
+}
+
+.learboard-table-body {
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: calc(100% - 22px);
 }
