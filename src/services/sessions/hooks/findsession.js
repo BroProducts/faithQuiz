@@ -9,6 +9,7 @@ const MongoClient = require('mongodb').MongoClient
 const ObjectId = require('mongodb').ObjectID;
 
 module.exports = function(hook) {
+  console.log(hook)
     return new Promise((resolve, reject) => {
       const stingurl = hook.app.locals.settings.mongodb;
       if(stingurl == "process.env.MONGODB_URI"){
