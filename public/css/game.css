@@ -94,11 +94,8 @@ hr {
   }
 }
 
-.container-animation {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+.clickable{
+  cursor: pointer;
 }
 
 .view {
