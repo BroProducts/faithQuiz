@@ -5,9 +5,11 @@ var app = feathers()
   .configure(feathers.authentication({ storage: window.localStorage }))
 
 function login() {
+    var username = document.getElementById("username").value
+    var lcusername = username.toLowerCase()
     app.authenticate({
     type: 'local',
-    'username': document.getElementById("username").value,
+    'username': lcusername,
     'password': document.getElementById("password").value
     }).then(function(result){
     console.log('Authenticated!', result);
