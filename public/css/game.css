@@ -669,11 +669,9 @@ hr {
 }
 
 .learboard-table-body {
-  width: calc(100% - 10px);
+  width: calc(100%);
   overflow-x: hidden;
   overflow-y: auto;
-  padding-left: 5px;
-  padding-right: 5px;
   height: calc(100% - 22px);
 }
 
