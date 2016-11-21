@@ -189,12 +189,12 @@
           <div class="learboard-table-body">
             <!-- ko if: leaderboard.leaderboardloaded() == true -->
             <!-- ko foreach: leaderboard.leaderboarddata() -->
-            <div class="leaderboard-table-body-row" data-bind="css: { my-score: username().toLocaleLowerCase() == $root.profil.currentUsername().toLocaleLowerCase() }">
+            <div class="leaderboard-table-body-row" data-bind="css: { my-score: currentUserScore }">
               <div class="leaderboard-table-body-row-item leaderboard-table-nr" data-bind="text: $index() + 1"></div>
               <div class="leaderboard-table-body-row-item leaderboard-table-username" data-bind="text: username"></div>
               <div class="leaderboard-table-body-row-item leaderboard-table-score" data-bind="text: score"></div>
               <div class="leaderboard-table-body-row-item leaderboard-table-date" data-bind="text: date"></div>
-              
+
             </div>
             <!-- /ko -->
             <!-- /ko -->
