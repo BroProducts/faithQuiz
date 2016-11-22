@@ -3,14 +3,15 @@ var app = feathers()
   .configure(feathers.socketio(socket))
   .configure(feathers.hooks())
 
-var signupService = app.service('signups');
+var userservice = app.service('users');
 
 function signup() {
     if(document.getElementById("password").value == document.getElementById("confpassword").value){
     //console.log("insignup1")
-    signupService.create({
+    userservice.create({
         username: document.getElementById("username").value,
-        password: document.getElementById("password").value
+        password: document.getElementById("password").value,
+        displayname : document.getElementById("username").value
     }).then(function(result){
         console.log("done")
         console.log(result)
