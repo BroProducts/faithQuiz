@@ -1,7 +1,7 @@
 app.ViewModelProfil = function() {
   var vm = this;
 
-  vm.currentUsername = ko.observable(app.get('user').username);
+  vm.currentUsername = ko.observable(app.get('user').displayname);
 
   vm.logout = function() {
     app.logout().then(function() {

@@ -77,7 +77,7 @@ module.exports = function(hook) {
                     userid: hook.params.user._id.toString(),
                     score: length -1,
                     createdAt: new Date(),
-                    username: hook.params.user.username
+                    username: hook.params.user.displayname
                   }
                 ).then(function(){
                   sessionCollection.remove(

@@ -1,5 +1,7 @@
 'use strict';
 
+const signup = require('./signup');
+
 const globalHooks = require('../../../hooks');
 const hooks = require('feathers-hooks');
 const auth = require('feathers-authentication').hooks;
@@ -17,7 +19,8 @@ exports.before = {
     auth.restrictToOwner({ ownerField: '_id' })
   ],
   create: [
-    auth.hashPassword()
+    auth.hashPassword(),
+    signup
   ],
   update: [
     auth.verifyToken(),
