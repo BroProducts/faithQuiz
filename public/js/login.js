@@ -4,13 +4,12 @@ var app = feathers()
   .configure(feathers.hooks())
   .configure(feathers.authentication({
     storage: window.localStorage
-  }))
-hidePreloader()
+  }));
 
 function login() {
   $('.preloader').show()
-  var username = document.getElementById("username").value
-  var lcusername = username.toLowerCase()
+  var username = document.getElementById("username").value;
+  var lcusername = username.toLowerCase();
   app.authenticate({
     type: 'local',
     'username': lcusername,
@@ -20,15 +19,15 @@ function login() {
     window.location = "game.html"
   }).catch(function(error) {
     console.error('Error authenticating!', error);
-    $('.preloader').hide()
+    $('.preloader').hide();
     alert('Username or Password wrong');
   });
-}
+};
 
 function hidePreloader() {
-  $('.preloader').hide()
-}
+  $('.preloader').hide();
+};
 
 function showPreloader() {
-  $('.preloader').show()
-}
+  $('.preloader').show();
+};
