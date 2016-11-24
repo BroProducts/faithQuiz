@@ -577,6 +577,30 @@ hr {
   display: none;
 }
 
+.mp-new-game-list {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.mp-new-game-list .mp-new-game-list-item:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.mp-new-game-list .mp-new-game-list-item:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.mp-new-game-list-item {
+  height: 44px;
+  line-height: 44px;
+  background: rgba(0, 129, 180, 0.5);
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
+}
+
 
 /*--- Multiplayer page game requests ---*/
 
@@ -590,6 +614,30 @@ hr {
   margin-top: 46px;
   overflow-y: auto;
   display: none;
+}
+
+.mp-game-requests-list {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.mp-game-requests-list .mp-game-requests-list-item:first-child {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.mp-game-requests-list .mp-game-requests-list-item:last-child {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.mp-game-requests-list-item {
+  height: 44px;
+  line-height: 44px;
+  background: rgba(0, 129, 180, 0.5);
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
 }
 
 
