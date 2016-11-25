@@ -611,6 +611,26 @@ hr {
   font-size: 18px;
 }
 
+.mp-btn-search-player-icon {
+  float: left;
+  font-size: 30px;
+  padding: 7px 10px 7px 0px;
+}
+
+.mp-btn-search-player-text {
+  float: left;
+}
+
+.mp-btn-random-player-icon {
+  float: left;
+  font-size: 30px;
+  padding: 7px 10px 7px 0px;
+}
+
+.mp-btn-random-player-text {
+  float: left;
+}
+
 .mp-btn-add-friend-text {
   float: left;
   font-size: 22px;
