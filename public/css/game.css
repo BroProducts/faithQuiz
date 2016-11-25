@@ -659,13 +659,13 @@ hr {
   background: rgba(0, 129, 180, 0.5);
   padding-left: 10px;
   font-size: 18px;
-  max-width: calc(100% - 112px);
-  max-height: 44px;
-  overflow: hidden;
 }
 
 .mp-game-requests-text {
   float: left;
+  max-width: calc(100% - 112px);
+  max-height: 44px;
+  overflow: hidden;
 }
 
 .mp-game-request-icon-decline {
