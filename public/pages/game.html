@@ -153,145 +153,144 @@
             </div>
             <div class="mp-btn-search-player-text">Spieler Suchen</div>
           </div>
-        </div>
-        <hr>
-        <div class="mp-new-game-list-item clickable">
-          <div class="mp-btn-random-player-icon">
-            <i class="ion-earth"></i>
+          <hr>
+          <div class="mp-new-game-list-item clickable">
+            <div class="mp-btn-random-player-icon">
+              <i class="ion-earth"></i>
+            </div>
+            <div class="mp-btn-random-player-text">Beliebiger Spieler</div>
           </div>
-          <div class="mp-btn-random-player-text">Beliebiger Spieler</div>
         </div>
-      </div>
-      <div class="mp-new-game-list">
-        <div class="mp-new-game-list-item clickable">
-          <div class="mp-btn-add-friend-icon">
-            <i class="ion-android-person-add"></i>
+        <div class="mp-new-game-list">
+          <div class="mp-new-game-list-item clickable">
+            <div class="mp-btn-add-friend-icon">
+              <i class="ion-android-person-add"></i>
+            </div>
+            <div class="mp-btn-add-friend-text">Add Friend</div>
           </div>
-          <div class="mp-btn-add-friend-text">Add Friend</div>
+          <hr>
+          <div class="mp-new-game-list-item clickable">Freund 1</div>
+          <hr>
+          <div class="mp-new-game-list-item clickable">Freund 2</div>
+          <hr>
+          <div class="mp-new-game-list-item clickable">Freund 3</div>
+          <hr>
+          <div class="mp-new-game-list-item clickable">Freund 4</div>
         </div>
-        <hr>
-        <div class="mp-new-game-list-item clickable">Freund 1</div>
-        <hr>
-        <div class="mp-new-game-list-item clickable">Freund 2</div>
-        <hr>
-        <div class="mp-new-game-list-item clickable">Freund 3</div>
-        <hr>
-        <div class="mp-new-game-list-item clickable">Freund 4</div>
+        <div data-bind="click: multiPlayer.closeNewGamePage">close new game page</div>
       </div>
-      <div data-bind="click: multiPlayer.closeNewGamePage">close new game page</div>
+
+      <!-- game requests Page -->
+      <div class="multiplayer-page-game-requests">
+        <div class="mp-game-requests-page-title">Game Requests</div>
+        <div class="mp-game-requests-list">
+          <div class="mp-game-requests-list-item">
+            <div class="mp-game-requests-text">game-request 1</div>
+            <div class="mp-game-request-icon-decline clickable">
+              <i class="ion-android-close"></i>
+            </div>
+            <div class="mp-game-request-icon-accept clickable">
+              <i class="ion-android-done"></i>
+            </div>
+          </div>
+          <hr>
+          <div class="mp-game-requests-list-item">
+            <div class="mp-game-requests-text">game-request 2</div>
+            <div class="mp-game-request-icon-decline clickable">
+              <i class="ion-android-close"></i>
+            </div>
+            <div class="mp-game-request-icon-accept clickable">
+              <i class="ion-android-done"></i>
+            </div>
+          </div>
+          <hr>
+          <div class="mp-game-requests-list-item">
+            <div class="mp-game-requests-text">game-request 3</div>
+            <div class="mp-game-request-icon-decline clickable">
+              <i class="ion-android-close"></i>
+            </div>
+            <div class="mp-game-request-icon-accept clickable">
+              <i class="ion-android-done"></i>
+            </div>
+          </div>
+          <hr>
+          <div class="mp-game-requests-list-item">
+            <div class="mp-game-requests-text">game-request 4</div>
+            <div class="mp-game-request-icon-decline clickable">
+              <i class="ion-android-close"></i>
+            </div>
+            <div class="mp-game-request-icon-accept clickable">
+              <i class="ion-android-done"></i>
+            </div>
+          </div>
+        </div>
+        <div data-bind="click: multiPlayer.closeGameRequestsPage">close game requests page</div>
+      </div>
+
+      <!-- ongoing Game Page -->
+      <div class="multiplayer-page-ongoing-game">
+        ongoing game bro
+        <div data-bind="click: multiPlayer.closeOngoingGamePage">close ongoing page</div>
+      </div>
+
+      <!-- your game requests Page -->
+      <div class="multiplayer-page-your-game-requests">
+        <div class="mp-your-game-requests-page-title">Your Game Requests</div>
+        <div class="mp-your-game-requests-list">
+          <div class="mp-your-game-requests-list-item clickable">your game-request 1</div>
+          <hr>
+          <div class="mp-your-game-requests-list-item clickable">your game-request 2</div>
+          <hr>
+          <div class="mp-your-game-requests-list-item clickable">your game-request 3</div>
+          <hr>
+          <div class="mp-your-game-requests-list-item clickable">your game-request 4</div>
+        </div>
+        <div data-bind="click: multiPlayer.closeYourGameRequestsPage">close your game requests page</div>
+      </div>
+
+      <!-- match history Page -->
+      <div class="multiplayer-page-match-history">
+        <div class="mp-match-history-list">
+          <div class="mp-match-history-list-item clickable">completed game 1</div>
+          <hr>
+          <div class="mp-match-history-list-item clickable">completed game 2</div>
+          <hr>
+          <div class="mp-match-history-list-item clickable">completed game 3</div>
+          <hr>
+          <div class="mp-match-history-list-item clickable">completed game 4</div>
+        </div>
+        <div data-bind="click: multiPlayer.closeMatchHistoryPage">close match history page</div>
+      </div>
     </div>
 
-    <!-- game requests Page -->
-    <div class="multiplayer-page-game-requests">
-      <div class="mp-game-requests-page-title">Game Requests</div>
-      <div class="mp-game-requests-list">
-        <div class="mp-game-requests-list-item">
-          <div class="mp-game-requests-text">game-request 1</div>
-          <div class="mp-game-request-icon-decline clickable">
-            <i class="ion-android-close"></i>
+    <div class="popup popup-leaderboard">
+      <div class="popup-title">Leaderboard</div>
+      <div class="popup-close-btn clickable" data-bind="click: closePopup">
+        <i class="ion-android-close"></i>
+      </div>
+      <div class="leaderboard-page">
+        <div class="leaderboard-table">
+          <div class="learboard-table-head">
+            <div class="learboard-table-head-item leaderboard-table-nr">#</div>
+            <div class="learboard-table-head-item leaderboard-table-username">Username</div>
+            <div class="learboard-table-head-item leaderboard-table-score">Score</div>
+            <div class="learboard-table-head-item leaderboard-table-date">Date</div>
           </div>
-          <div class="mp-game-request-icon-accept clickable">
-            <i class="ion-android-done"></i>
-          </div>
-        </div>
-        <hr>
-        <div class="mp-game-requests-list-item">
-          <div class="mp-game-requests-text">game-request 2</div>
-          <div class="mp-game-request-icon-decline clickable">
-            <i class="ion-android-close"></i>
-          </div>
-          <div class="mp-game-request-icon-accept clickable">
-            <i class="ion-android-done"></i>
-          </div>
-        </div>
-        <hr>
-        <div class="mp-game-requests-list-item">
-          <div class="mp-game-requests-text">game-request 3</div>
-          <div class="mp-game-request-icon-decline clickable">
-            <i class="ion-android-close"></i>
-          </div>
-          <div class="mp-game-request-icon-accept clickable">
-            <i class="ion-android-done"></i>
-          </div>
-        </div>
-        <hr>
-        <div class="mp-game-requests-list-item">
-          <div class="mp-game-requests-text">game-request 4</div>
-          <div class="mp-game-request-icon-decline clickable">
-            <i class="ion-android-close"></i>
-          </div>
-          <div class="mp-game-request-icon-accept clickable">
-            <i class="ion-android-done"></i>
+          <div class="learboard-table-body">
+            <!-- ko if: leaderboard.leaderboardloaded() == true -->
+            <!-- ko foreach: leaderboard.leaderboarddata() -->
+            <div class="leaderboard-table-body-row" data-bind="css: { myscore: currentUserScore() == true }">
+              <div class="leaderboard-table-body-row-item leaderboard-table-nr" data-bind="text: $index() + 1"></div>
+              <div class="leaderboard-table-body-row-item leaderboard-table-username" data-bind="text: username"></div>
+              <div class="leaderboard-table-body-row-item leaderboard-table-score" data-bind="text: score"></div>
+              <div class="leaderboard-table-body-row-item leaderboard-table-date" data-bind="text: date"></div>
+            </div>
+            <!-- /ko -->
+            <!-- /ko -->
           </div>
         </div>
       </div>
-      <div data-bind="click: multiPlayer.closeGameRequestsPage">close game requests page</div>
     </div>
-
-    <!-- ongoing Game Page -->
-    <div class="multiplayer-page-ongoing-game">
-      ongoing game bro
-      <div data-bind="click: multiPlayer.closeOngoingGamePage">close ongoing page</div>
-    </div>
-
-    <!-- your game requests Page -->
-    <div class="multiplayer-page-your-game-requests">
-      <div class="mp-your-game-requests-page-title">Your Game Requests</div>
-      <div class="mp-your-game-requests-list">
-        <div class="mp-your-game-requests-list-item clickable">your game-request 1</div>
-        <hr>
-        <div class="mp-your-game-requests-list-item clickable">your game-request 2</div>
-        <hr>
-        <div class="mp-your-game-requests-list-item clickable">your game-request 3</div>
-        <hr>
-        <div class="mp-your-game-requests-list-item clickable">your game-request 4</div>
-      </div>
-      <div data-bind="click: multiPlayer.closeYourGameRequestsPage">close your game requests page</div>
-    </div>
-
-    <!-- match history Page -->
-    <div class="multiplayer-page-match-history">
-      <div class="mp-match-history-list">
-        <div class="mp-match-history-list-item clickable">completed game 1</div>
-        <hr>
-        <div class="mp-match-history-list-item clickable">completed game 2</div>
-        <hr>
-        <div class="mp-match-history-list-item clickable">completed game 3</div>
-        <hr>
-        <div class="mp-match-history-list-item clickable">completed game 4</div>
-      </div>
-      <div data-bind="click: multiPlayer.closeMatchHistoryPage">close match history page</div>
-    </div>
-  </div>
-
-  <div class="popup popup-leaderboard">
-    <div class="popup-title">Leaderboard</div>
-    <div class="popup-close-btn clickable" data-bind="click: closePopup">
-      <i class="ion-android-close"></i>
-    </div>
-    <div class="leaderboard-page">
-      <div class="leaderboard-table">
-        <div class="learboard-table-head">
-          <div class="learboard-table-head-item leaderboard-table-nr">#</div>
-          <div class="learboard-table-head-item leaderboard-table-username">Username</div>
-          <div class="learboard-table-head-item leaderboard-table-score">Score</div>
-          <div class="learboard-table-head-item leaderboard-table-date">Date</div>
-        </div>
-        <div class="learboard-table-body">
-          <!-- ko if: leaderboard.leaderboardloaded() == true -->
-          <!-- ko foreach: leaderboard.leaderboarddata() -->
-          <div class="leaderboard-table-body-row" data-bind="css: { myscore: currentUserScore() == true }">
-            <div class="leaderboard-table-body-row-item leaderboard-table-nr" data-bind="text: $index() + 1"></div>
-            <div class="leaderboard-table-body-row-item leaderboard-table-username" data-bind="text: username"></div>
-            <div class="leaderboard-table-body-row-item leaderboard-table-score" data-bind="text: score"></div>
-            <div class="leaderboard-table-body-row-item leaderboard-table-date" data-bind="text: date"></div>
-          </div>
-          <!-- /ko -->
-          <!-- /ko -->
-        </div>
-      </div>
-    </div>
-  </div>
 
   </div>
   <!-- JavaScript Vendor -->
