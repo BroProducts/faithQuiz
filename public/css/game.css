@@ -462,7 +462,7 @@ hr {
 }
 
 .multiplayer-ongoing-games-title {
-  width: 104px;
+  display: inline-block;
   padding: 5px 10px;
   font-size: 15px;
   background: rgba(0, 129, 180, 0.5);
@@ -638,7 +638,7 @@ hr {
 }
 
 .mp-game-requests-page-title {
-  width: 103px;
+  display: inline-block;
   padding: 5px 10px;
   font-size: 15px;
   background: rgba(0, 129, 180, 0.5);
@@ -738,7 +738,7 @@ hr {
 }
 
 .mp-your-game-requests-page-title {
-  width: 136px;
+  display: inline-block;
   padding: 5px 10px;
   font-size: 15px;
   background: rgba(0, 129, 180, 0.5);
