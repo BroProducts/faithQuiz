@@ -633,7 +633,7 @@ hr {
 
 .mp-game-requests-page-title {
   width: 102px;
-  padding: 5px;
+  padding: 5px 10px;
   font-size: 15px;
   background: rgba(0, 129, 180, 0.5);
   border-bottom: 1px solid black;
@@ -733,7 +733,7 @@ hr {
 
 .mp-your-game-requests-page-title {
   width: 136px;
-  padding: 5px;
+  padding: 5px 10px;
   font-size: 15px;
   background: rgba(0, 129, 180, 0.5);
   border-bottom: 1px solid black;
