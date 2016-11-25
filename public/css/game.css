@@ -647,7 +647,6 @@ hr {
   line-height: 44px;
   background: rgba(0, 129, 180, 0.5);
   padding-left: 10px;
-  padding-right: 10px;
   font-size: 18px;
 }
 
@@ -657,12 +656,20 @@ hr {
 
 .mp-game-request-icon-decline {
   float: right;
-  font-size: 44px;
+  font-size: 34px;
+  padding: 5px 17px 5px 17px;
+  border-left: 1px;
+  border-left-color: rgba(0, 0, 0, 0.5);
+  border-left-style: solid;
 }
 
 .mp-game-request-icon-accept {
   float: right;
-  font-size: 44px;
+  font-size: 34px;
+  padding: 5px 15px 5px 15px;
+  border-left: 1px;
+  border-left-color: rgba(0, 0, 0, 0.5);
+  border-left-style: solid;
 }
 
 
