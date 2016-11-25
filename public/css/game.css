@@ -672,7 +672,7 @@ hr {
   border-left: 1px;
   border-left-color: rgba(0, 0, 0, 0.5);
   border-left-style: solid;
-  color: green;
+  color: rgba(0, 170, 0, 0.7);
   background: rgba(0, 129, 180, 0.5);
 }
 
