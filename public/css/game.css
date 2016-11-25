@@ -662,6 +662,7 @@ hr {
   border-left-color: rgba(0, 0, 0, 0.5);
   border-left-style: solid;
   color: rgba(255, 0, 0, 0.7);
+  background: rgba(0, 129, 180, 0.5);
 }
 
 .mp-game-request-icon-accept {
@@ -672,6 +673,7 @@ hr {
   border-left-color: rgba(0, 0, 0, 0.5);
   border-left-style: solid;
   color: green;
+  background: rgba(0, 129, 180, 0.5);
 }
 
 
