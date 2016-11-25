@@ -501,6 +501,7 @@ hr {
   max-width: calc(100% - 86px);
   max-height: 44px;
   overflow: hidden;
+  word-break: break-all;
 }
 
 .multiplayer-ongoing-game-right {
@@ -666,6 +667,7 @@ hr {
   max-width: calc(100% - 112px);
   max-height: 44px;
   overflow: hidden;
+  word-break: break-all;
 }
 
 .mp-game-request-icon-decline {
@@ -742,6 +744,8 @@ hr {
   padding-left: 10px;
   padding-right: 10px;
   font-size: 18px;
+  overflow: hidden;
+  word-break: break-all;
 }
 
 
