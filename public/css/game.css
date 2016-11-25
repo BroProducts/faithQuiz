@@ -612,6 +612,7 @@ hr {
 }
 
 .mp-btn-search-player-icon {
+  width: 25px;
   float: left;
   font-size: 30px;
   padding: 7px 10px 7px 0px;
@@ -622,6 +623,7 @@ hr {
 }
 
 .mp-btn-random-player-icon {
+  width: 25px;
   float: left;
   font-size: 30px;
   padding: 7px 10px 7px 0px;
@@ -633,10 +635,10 @@ hr {
 
 .mp-btn-add-friend-text {
   float: left;
-  font-size: 22px;
 }
 
 .mp-btn-add-friend-icon {
+  width: 25px;
   float: left;
   font-size: 30px;
   padding: 7px 10px 7px 0px;
