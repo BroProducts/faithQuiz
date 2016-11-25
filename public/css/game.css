@@ -651,6 +651,20 @@ hr {
   font-size: 18px;
 }
 
+.mp-game-requests-text {
+  float: left;
+}
+
+.mp-game-request-icon-decline {
+  float: right;
+  font-size: 44px;
+}
+
+.mp-game-request-icon-accept {
+  float: right;
+  font-size: 44px;
+}
+
 
 /*--- Multiplayer page ongoing game ---*/
 
