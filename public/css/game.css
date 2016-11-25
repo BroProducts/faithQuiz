@@ -601,16 +601,15 @@ hr {
   font-size: 18px;
 }
 
-.mp-btn-invite-person-text {
+.mp-btn-add-friend-text {
   float: left;
   font-size: 22px;
 }
 
-.mp-btn-invite-person-icon {
-  float: right;
-  font-size: 50px;
-  padding-left: 15px;
-  border-left: 1px dashed rgba(0, 0, 0, 0.5);
+.mp-btn-add-friend-icon {
+  float: left;
+  font-size: 30px;
+  padding: 7px 10px 7px 0px;
 }
 
 
