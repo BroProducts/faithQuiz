@@ -461,15 +461,15 @@ hr {
   text-align: -webkit-center;
 }
 
-.multiplayer-ongoing-games-title{
-    width: 136px;
-    padding: 5px 10px;
-    font-size: 15px;
-    background: rgba(0, 129, 180, 0.5);
-    border-bottom: 1px solid black;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    margin-top: 10px;
+.multiplayer-ongoing-games-title {
+  width: 103px;
+  padding: 5px 10px;
+  font-size: 15px;
+  background: rgba(0, 129, 180, 0.5);
+  border-bottom: 1px solid black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-top: 10px;
 }
 
 .multiplayer-ongoing-games-wrapper .multiplayer-ongoing-game:first-child {
