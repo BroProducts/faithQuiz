@@ -642,6 +642,16 @@ hr {
   border-bottom-right-radius: 5px;
 }
 
+.mp-game-requests-list .mp-game-requests-list-item:first-child > .mp-game-request-icon-decline {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.mp-game-requests-list .mp-game-requests-list-item:last-child > .mp-game-request-icon-decline {
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
 .mp-game-requests-list-item {
   height: 44px;
   line-height: 44px;
