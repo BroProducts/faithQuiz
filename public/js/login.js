@@ -31,3 +31,9 @@ function hidePreloader() {
 function showPreloader() {
   $('.preloader').show();
 };
+
+$(document).on('keydown', function(e){
+  if (e.keyCode == 13){
+    login();
+  };
+});
