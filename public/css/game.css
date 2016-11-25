@@ -498,6 +498,9 @@ hr {
 
 .multiplayer-ongoing-game-middle {
   float: left;
+  max-width: calc(100% - 86px);
+  max-height: 44px;
+  overflow: hidden;
 }
 
 .multiplayer-ongoing-game-right {
@@ -642,11 +645,11 @@ hr {
   border-bottom-right-radius: 5px;
 }
 
-.mp-game-requests-list .mp-game-requests-list-item:first-child > .mp-game-request-icon-decline {
+.mp-game-requests-list .mp-game-requests-list-item:first-child>.mp-game-request-icon-decline {
   border-top-right-radius: 5px;
 }
 
-.mp-game-requests-list .mp-game-requests-list-item:last-child > .mp-game-request-icon-decline {
+.mp-game-requests-list .mp-game-requests-list-item:last-child>.mp-game-request-icon-decline {
   border-bottom-right-radius: 5px;
 }
 
@@ -656,6 +659,9 @@ hr {
   background: rgba(0, 129, 180, 0.5);
   padding-left: 10px;
   font-size: 18px;
+  max-width: calc(100% - 112px);
+  max-height: 44px;
+  overflow: hidden;
 }
 
 .mp-game-requests-text {
