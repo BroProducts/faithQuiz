@@ -81,15 +81,15 @@
     </div>
 
     <div class="popup popup-multiplayer">
-      <div class="popup-multiplayer-btn-back clickable" data-bind="click: closePopup">
+      <div class="popup-title">Multiplayer</div>
+      <div class="popup-multiplayer-btn-back clickable" data-bind="click: multiPlayer.pageBack">
         <i class="ion-android-arrow-back"></i>
       </div>
-      <div class="popup-title">Multiplayer</div>
       <div class="popup-close-btn clickable" data-bind="click: closePopup">
         <i class="ion-android-close"></i>
       </div>
       <!-- Menu Page -->
-      <div class="multiplayer-page-menu">
+      <div class="mp-page multiplayer-page-menu">
         <!-- Welcome MSG -->
         <div class="multiplayer-welcome-message">Logged in as
           <span class="multiplayer-welcome-message-playername" data-bind="text: profil.currentUsername">Playername</span>
@@ -148,7 +148,7 @@
       </div>
 
       <!-- New Game Page -->
-      <div class="multiplayer-page-new-game">
+      <div class="mp-page multiplayer-page-new-game">
         <div class="mp-new-game-list">
           <div class="mp-new-game-list-item clickable">
             <div class="mp-btn-search-player-icon">
@@ -186,7 +186,7 @@
       </div>
 
       <!-- game requests Page -->
-      <div class="multiplayer-page-game-requests">
+      <div class="mp-page multiplayer-page-game-requests">
         <div class="mp-game-requests-page-title">Game Requests</div>
         <div class="mp-game-requests-list">
           <div class="mp-game-requests-list-item">
@@ -233,13 +233,13 @@
       </div>
 
       <!-- ongoing Game Page -->
-      <div class="multiplayer-page-ongoing-game">
+      <div class="mp-page multiplayer-page-ongoing-game">
         ongoing game bro
         <div data-bind="click: multiPlayer.closeOngoingGamePage">close ongoing page</div>
       </div>
 
       <!-- your game requests Page -->
-      <div class="multiplayer-page-your-game-requests">
+      <div class="mp-page multiplayer-page-your-game-requests">
         <div class="mp-your-game-requests-page-title">Your Game Requests</div>
         <div class="mp-your-game-requests-list">
           <div class="mp-your-game-requests-list-item">
@@ -274,7 +274,7 @@
       </div>
 
       <!-- match history Page -->
-      <div class="multiplayer-page-match-history">
+      <div class="mp-page multiplayer-page-match-history">
         <div class="mp-match-history-page-title">Match History</div>
         <div class="mp-match-history-list">
           <div class="mp-match-history-list-item clickable">completed game 1</div>
