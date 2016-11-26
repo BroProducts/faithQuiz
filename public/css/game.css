@@ -813,6 +813,25 @@ hr {
   word-break: break-all;
 }
 
+.mp-your-game-requests-text {
+  float: left;
+  max-width: calc(100% - 112px);
+  max-height: 44px;
+  overflow: hidden;
+  word-break: break-all;
+}
+
+.mp-your-game-request-icon-decline {
+  float: right;
+  font-size: 34px;
+  padding: 5px 17px 5px 17px;
+  border-left: 1px;
+  border-left-color: rgba(0, 0, 0, 0.5);
+  border-left-style: solid;
+  color: rgba(255, 0, 0, 0.7);
+  background: rgba(0, 129, 180, 0.5);
+}
+
 
 /*--- Multiplayer page match history ---*/
 
