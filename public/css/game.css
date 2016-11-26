@@ -633,18 +633,18 @@ hr {
   float: left;
 }
 
-.mp-new-game-friend-list-title{
-    display: inline-block;
-    padding: 5px 10px;
-    font-size: 15px;
-    background: rgba(0, 129, 180, 0.5);
-    border-bottom: 1px solid black;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    margin-top: 10px;
+.mp-new-game-friend-list-title {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 15px;
+  background: rgba(0, 129, 180, 0.5);
+  border-bottom: 1px solid black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-top: 10px;
 }
 
-.mp-new-game-friend-list{
+.mp-new-game-friend-list {
   margin-top: 0px !important;
 }
 
@@ -828,13 +828,22 @@ hr {
   display: none;
 }
 
-.mp-match-history-list {
+.mp-match-history-page-title {
+  display: inline-block;
+  padding: 5px 10px;
+  font-size: 15px;
+  background: rgba(0, 129, 180, 0.5);
+  border-bottom: 1px solid black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   margin-top: 10px;
+}
+
+.mp-match-history-list {
   margin-bottom: 20px;
 }
 
 .mp-match-history-list .mp-match-history-list-item:first-child {
-  border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 }
 
