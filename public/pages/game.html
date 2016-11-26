@@ -82,7 +82,7 @@
 
     <div class="popup popup-multiplayer">
       <div class="popup-title">Multiplayer</div>
-      <!-- ko if: multiPlayer.pageHistory().length -->
+      <!-- ko if: multiPlayer.pageHistory().length != 0 -->
       <div class="popup-multiplayer-btn-back clickable" data-bind="click: multiPlayer.pageBack">
         <i class="ion-android-arrow-back"></i>
       </div>
