@@ -726,7 +726,7 @@ hr {
   word-break: break-all;
 }
 
-.mp-game-request-icon-decline {
+.mp-game-requests-icon-decline {
   float: right;
   font-size: 34px;
   padding: 5px 17px 5px 17px;
@@ -737,7 +737,7 @@ hr {
   background: rgba(0, 129, 180, 0.5);
 }
 
-.mp-game-request-icon-accept {
+.mp-game-requests-icon-accept {
   float: right;
   font-size: 34px;
   padding: 5px 15px 5px 15px;
@@ -807,7 +807,6 @@ hr {
   line-height: 44px;
   background: rgba(0, 129, 180, 0.5);
   padding-left: 10px;
-  padding-right: 10px;
   font-size: 18px;
   overflow: hidden;
   word-break: break-all;
@@ -815,13 +814,13 @@ hr {
 
 .mp-your-game-requests-text {
   float: left;
-  max-width: calc(100% - 112px);
+  max-width: calc(100% - 55px);
   max-height: 44px;
   overflow: hidden;
   word-break: break-all;
 }
 
-.mp-your-game-request-icon-decline {
+.mp-your-game-requests-icon-decline {
   float: right;
   font-size: 34px;
   padding: 5px 17px 5px 17px;
