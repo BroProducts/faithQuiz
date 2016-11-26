@@ -29,20 +29,10 @@ app.ViewModelMultiPlayer = function() {
     $newGamePage.fadeIn();
   };
 
-  vm.closeNewGamePage = function() {
-    $newGamePage.fadeOut();
-    $menuPage.fadeIn();
-  }
-
   vm.showGameRequestsPage = function() {
     vm.pageHistory().push($menuPage);
     $menuPage.fadeOut();
     $gameRequestsPage.fadeIn();
-  };
-
-  vm.closeGameRequestsPage = function() {
-    $gameRequestsPage.fadeOut();
-    $menuPage.fadeIn();
   };
 
   vm.showOngoingGamePage = function() {
@@ -51,31 +41,16 @@ app.ViewModelMultiPlayer = function() {
     $ongoingGamePage.fadeIn();
   };
 
-  vm.closeOngoingGamePage = function() {
-    $ongoingGamePage.fadeOut();
-    $menuPage.fadeIn();
-  };
-
   vm.showYourGameRequestsPage = function() {
     vm.pageHistory().push($menuPage);
     $menuPage.fadeOut();
     $yourGameRequestsPage.fadeIn();
   };
 
-  vm.closeYourGameRequestsPage = function() {
-    $yourGameRequestsPage.fadeOut();
-    $menuPage.fadeIn();
-  };
-
   vm.showMatchHistoryPage = function() {
     vm.pageHistory().push($menuPage);
     $menuPage.fadeOut();
     $matchHistoryPage.fadeIn();
-  };
-
-  vm.closeMatchHistoryPage = function() {
-    $matchHistoryPage.fadeOut();
-    $menuPage.fadeIn();
   };
 
   console.log('MultiPlayer ViewModel loaded');

@@ -82,9 +82,11 @@
 
     <div class="popup popup-multiplayer">
       <div class="popup-title">Multiplayer</div>
+      <!-- ko if: multiPlayer.pageHistory -->
       <div class="popup-multiplayer-btn-back clickable" data-bind="click: multiPlayer.pageBack">
         <i class="ion-android-arrow-back"></i>
       </div>
+      <!-- /ko -->
       <div class="popup-close-btn clickable" data-bind="click: closePopup">
         <i class="ion-android-close"></i>
       </div>
@@ -182,7 +184,6 @@
           <hr>
           <div class="mp-new-game-list-item clickable">Freund 4</div>
         </div>
-        <div data-bind="click: multiPlayer.closeNewGamePage">close new game page</div>
       </div>
 
       <!-- game requests Page -->
@@ -229,13 +230,11 @@
             </div>
           </div>
         </div>
-        <div data-bind="click: multiPlayer.closeGameRequestsPage">close game requests page</div>
       </div>
 
       <!-- ongoing Game Page -->
       <div class="mp-page multiplayer-page-ongoing-game">
         ongoing game bro
-        <div data-bind="click: multiPlayer.closeOngoingGamePage">close ongoing page</div>
       </div>
 
       <!-- your game requests Page -->
@@ -270,7 +269,6 @@
             </div>
           </div>
         </div>
-        <div data-bind="click: multiPlayer.closeYourGameRequestsPage">close your game requests page</div>
       </div>
 
       <!-- match history Page -->
@@ -285,7 +283,6 @@
           <hr>
           <div class="mp-match-history-list-item clickable">completed game 4</div>
         </div>
-        <div data-bind="click: multiPlayer.closeMatchHistoryPage">close match history page</div>
       </div>
     </div>
 
