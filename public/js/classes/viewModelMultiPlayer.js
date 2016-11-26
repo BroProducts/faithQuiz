@@ -18,37 +18,37 @@ app.ViewModelMultiPlayer = function() {
   vm.pageBack = function(){
     if(vm.pageHistory().length){
       $('.mp-page').fadeOut();
-      var $lastPage = vm.pageHistory().pop();
+      var $lastPage = vm.pageHistory.pop();
       $lastPage.fadeIn();
     }
   }
 
   vm.showNewGamePage = function() {
-    vm.pageHistory().push($menuPage);
+    vm.pageHistory.push($menuPage);
     $menuPage.fadeOut();
     $newGamePage.fadeIn();
   };
 
   vm.showGameRequestsPage = function() {
-    vm.pageHistory().push($menuPage);
+    vm.pageHistory.push($menuPage);
     $menuPage.fadeOut();
     $gameRequestsPage.fadeIn();
   };
 
   vm.showOngoingGamePage = function() {
-    vm.pageHistory().push($menuPage);
+    vm.pageHistory.push($menuPage);
     $menuPage.fadeOut();
     $ongoingGamePage.fadeIn();
   };
 
   vm.showYourGameRequestsPage = function() {
-    vm.pageHistory().push($menuPage);
+    vm.pageHistory.push($menuPage);
     $menuPage.fadeOut();
     $yourGameRequestsPage.fadeIn();
   };
 
   vm.showMatchHistoryPage = function() {
-    vm.pageHistory().push($menuPage);
+    vm.pageHistory.push($menuPage);
     $menuPage.fadeOut();
     $matchHistoryPage.fadeIn();
   };
