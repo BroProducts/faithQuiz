@@ -392,6 +392,20 @@ hr {
   overflow: auto;
 }
 
+.popup-multiplayer-btn-back{
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    color: white;
+    position: absolute;
+    font-size: 30px;
+    padding-top: 8px;
+    width: 46px;
+    height: 46px;
+    text-align: center;
+    cursor: pointer;
+}
+
 .multiplayer-welcome-message {
   margin-top: 10px;
   font-size: 15px;
