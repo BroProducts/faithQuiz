@@ -651,6 +651,7 @@ hr {
   background: transparent;
   color: white;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0px !important;
 }
 
 .mp-btn-search-player-input:focus {
