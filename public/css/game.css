@@ -625,7 +625,7 @@ hr {
   font-size: 18px;
 }
 
-.mp-new-game-search-player{
+.mp-new-game-search-player {
   padding-right: 0px;
 }
 
@@ -639,11 +639,24 @@ hr {
 }
 
 .mp-btn-search-player-input {
+  box-sizing: border-box;
   margin-top: 5px;
   width: calc(100% - 60px);
   float: left;
   height: 34px;
   margin-bottom: 5px;
+  border: 0;
+  padding-left: 4px;
+  padding-right: 4px;
+  background: transparent;
+  color: white;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.mp-btn-search-player-input:focus {
+  outline: none;
+  border-bottom: 1px solid #00ad4d;
+  ;
 }
 
 .mp-btn-random-player-icon {
