@@ -15,5 +15,6 @@ app.ViewModelMain = function() {
   vm.profil = new app.ViewModelProfil();
   vm.singlePlayer = new app.ViewModelSinglePlayer();
   vm.multiPlayer = new app.ViewModelMultiPlayer();
+  vm.friendlist = new app.ViewModelFriendlist();
   vm.leaderboard = new app.ViewModelLeaderboard();
 };
