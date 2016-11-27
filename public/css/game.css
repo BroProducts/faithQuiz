@@ -633,14 +633,14 @@ hr {
   width: 25px;
   float: right;
   font-size: 30px;
-  padding: 7px 10px 7px 10px;
+  padding: 7px 10px 7px 14px;
   border-left: 1px dashed rgba(0, 0, 0, 0.5);
   background: rgba(0, 129, 180, 0.5);
 }
 
 .mp-btn-search-player-input {
   margin-top: 5px;
-  width: calc(100% - 56px);
+  width: calc(100% - 60px);
   float: left;
   height: 34px;
   margin-bottom: 5px;
