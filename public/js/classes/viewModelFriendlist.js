@@ -11,8 +11,8 @@ app.ViewModelFriendlist = function() {
     vm.friends.push(friend);
   };
 
-  vm.removeFriend = function() {
-    var self = this;
+  vm.removeFriend = function(friend) {
+    var self = friend || this;
     vm.friends.remove(self);
   };
 
