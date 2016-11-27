@@ -7,7 +7,7 @@ app.ViewModelFriendlist = function() {
     var options = {
       username: vm.friendNameInput
     }
-    var friend = new app.Payer(options);
+    var friend = new app.Player(options);
     vm.friends.push(friend);
   };
 
@@ -22,10 +22,11 @@ app.ViewModelFriendlist = function() {
         username: 'Friend' + i,
         displayname: 'friEnd' + i
       }
-      var friend = new app.Payer(options);
+      var friend = new app.Player(options);
       vm.friends.push(friend);
     };
   };
+  vm.loadFriends();
 
   console.log('Friendlist ViewModel loaded');
 };
