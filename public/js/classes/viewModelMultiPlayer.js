@@ -4,7 +4,6 @@ app.ViewModelMultiPlayer = function() {
   vm.yourGameRequests = ko.observableArray();
   vm.ongoingGames = ko.observableArray();
   vm.completedGames = ko.observableArray();
-  vm.friendslist = ko.observableArray();
 
   var $menuPage = $('.multiplayer-page-menu');
   var $newGamePage = $('.multiplayer-page-new-game');
