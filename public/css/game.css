@@ -392,18 +392,18 @@ hr {
   overflow: auto;
 }
 
-.popup-multiplayer-btn-back{
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
-    color: white;
-    position: absolute;
-    font-size: 30px;
-    padding-top: 8px;
-    width: 46px;
-    height: 46px;
-    text-align: center;
-    cursor: pointer;
+.popup-multiplayer-btn-back {
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  color: white;
+  position: absolute;
+  font-size: 30px;
+  padding-top: 8px;
+  width: 46px;
+  height: 46px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .multiplayer-welcome-message {
@@ -625,15 +625,25 @@ hr {
   font-size: 18px;
 }
 
-.mp-btn-search-player-icon {
-  width: 25px;
-  float: left;
-  font-size: 30px;
-  padding: 7px 10px 7px 0px;
+.mp-new-game-search-player{
+  padding-right: 0px;
 }
 
-.mp-btn-search-player-text {
+.mp-btn-search-player-icon {
+  width: 25px;
+  float: right;
+  font-size: 30px;
+  padding: 7px 10px 7px 10px;
+  border-left: 1px dashed rgba(0, 0, 0, 0.5);
+  background: rgba(0, 129, 180, 0.5);
+}
+
+.mp-btn-search-player-input {
+  margin-top: 5px;
+  width: calc(100% - 56px);
   float: left;
+  height: 34px;
+  margin-bottom: 5px;
 }
 
 .mp-btn-random-player-icon {
