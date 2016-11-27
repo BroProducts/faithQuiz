@@ -26,7 +26,6 @@ app.ViewModelFriendlist = function() {
       vm.friends.push(friend);
     };
   };
-  vm.loadFriends();
 
   console.log('Friendlist ViewModel loaded');
 };
