@@ -691,18 +691,18 @@ hr {
   border-top-left-radius: 0px !important;
 }
 
-.mp-btn-add-friend-text {
-  float: left;
+.mp-new-game-add-friend {
+  padding-right: 0px;
 }
 
 .mp-btn-add-friend-icon {
   width: 25px;
   float: right;
   font-size: 30px;
-  padding: 7px 10px 7px 14px;
+  padding: 7px 14px 7px 10px;
   border-left: 1px dashed rgba(0, 0, 0, 0.5);
   background: rgba(0, 129, 180, 0.5);
-  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .mp-btn-add-friend-input {
