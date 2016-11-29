@@ -11,6 +11,7 @@ app.ViewModelFriendlist = function() {
       };
       var friend = new app.Player(options);
       vm.friends.push(friend);
+      vm.friendNameInput('');
     }
   };
 
