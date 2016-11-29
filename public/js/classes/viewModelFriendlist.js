@@ -10,7 +10,7 @@ app.ViewModelFriendlist = function() {
         username: playername
       };
       var friend = new app.Player(options);
-      vm.friends.push(friend);
+      vm.friends.unshift(friend);
       vm.friendNameInput('');
     }
   };
@@ -27,7 +27,7 @@ app.ViewModelFriendlist = function() {
         displayname: 'friEnd' + i
       }
       var friend = new app.Player(options);
-      vm.friends.unshift(friend);
+      vm.friends.push(friend);
     };
   };
   vm.loadFriends();
