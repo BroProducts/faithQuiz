@@ -27,7 +27,7 @@ app.ViewModelFriendlist = function() {
         displayname: 'friEnd' + i
       }
       var friend = new app.Player(options);
-      vm.friends.push(friend);
+      vm.friends.unshift(friend);
     };
   };
   vm.loadFriends();
