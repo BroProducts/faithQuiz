@@ -3,12 +3,12 @@ app.ViewModelFriendlist = function() {
   vm.friends = ko.observableArray();
 
   vm.friendNameInput = ko.observable();
-  vm.addFriend = function(name) {
-    var playername = name || vm.friendNameInput()
+  vm.addFriend = function() {
+    var playername = vm.friendNameInput();
     if (playername.length) {
       var options = {
         username: playername
-      }
+      };
       var friend = new app.Player(options);
       vm.friends.push(friend);
     }
