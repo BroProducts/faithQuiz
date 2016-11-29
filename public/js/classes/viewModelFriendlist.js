@@ -3,12 +3,15 @@ app.ViewModelFriendlist = function() {
   vm.friends = ko.observableArray();
 
   vm.friendNameInput = ko.observable();
-  vm.addFriend = function() {
-    var options = {
-      username: vm.friendNameInput
+  vm.addFriend = function(name) {
+    var name = name || vm.friendNameInput()
+    if (name.length) {
+      var options = {
+        username: name
+      }
+      var friend = new app.Player(options);
+      vm.friends.push(friend);
     }
-    var friend = new app.Player(options);
-    vm.friends.push(friend);
   };
 
   vm.removeFriend = function(friend) {
@@ -16,8 +19,8 @@ app.ViewModelFriendlist = function() {
     vm.friends.remove(self);
   };
 
-  vm.loadFriends = function(){
-    for(var i = 0; i < 6; i++){
+  vm.loadFriends = function() {
+    for (var i = 0; i < 6; i++) {
       var options = {
         username: 'Friend' + i,
         displayname: 'friEnd' + i

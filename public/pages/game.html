@@ -170,19 +170,15 @@
         <div class="mp-new-game-friend-list-title">Friend List</div>
         <div class="mp-new-game-list mp-new-game-friend-list">
           <div class="mp-new-game-list-item mp-new-game-add-friend">
-            <input class="mp-btn-add-friend-input" type="text" placeholder="Add Friend" />
-            <div class="mp-btn-add-friend-icon clickable">
+            <input class="mp-btn-add-friend-input" type="text" placeholder="Add Friend" data-bind="textInput: friendlist.friendNameInput" />
+            <div class="mp-btn-add-friend-icon clickable" data-bind="click: friendlist.addFriend">
               <i class="ion-android-person-add"></i>
             </div>
           </div>
+          <!-- ko foreach: friendlist.friends -->
           <hr>
-          <div class="mp-new-game-list-item clickable">Freund 1</div>
-          <hr>
-          <div class="mp-new-game-list-item clickable">Freund 2</div>
-          <hr>
-          <div class="mp-new-game-list-item clickable">Freund 3</div>
-          <hr>
-          <div class="mp-new-game-list-item clickable">Freund 4</div>
+          <div class="mp-new-game-list-item clickable" data-bind="text: displayname">Playername</div>
+          <!-- /ko -->
         </div>
       </div>
 
