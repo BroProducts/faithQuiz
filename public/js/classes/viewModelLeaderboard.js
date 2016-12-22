@@ -6,11 +6,13 @@ app.ViewModelLeaderboard = function() {
   var $leaderboardPopup = $('.popup-leaderboard')
   vm.start = function() {
     vm.leaderboardloaded(false);
-    leaderboardService.find([
-      { $group : {_id : "$username", score : { $max : "$score" } } },
-      { $sort : { score : -1 } },
-      { $limit : 50 }
-    ]).then(function(page) {
+    leaderboardService.find({
+    query: {
+        $sort: { score: -1 },
+        $limit: 25
+      }
+    })
+    .then(function(page) {
       vm.leaderboarddata([])
       for (var i = 0; i < page.data.length; i++) {
         var leaderboard = new app.leaderboard(page.data[i]);

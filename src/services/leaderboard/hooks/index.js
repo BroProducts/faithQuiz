@@ -1,5 +1,7 @@
 'use strict';
 
+const getleaderboard = require('./getleaderboard');
+
 const globalHooks = require('../../../hooks');
 const hooks = require('feathers-hooks');
 const auth = require('feathers-authentication').hooks;
@@ -10,7 +12,7 @@ exports.before = {
     auth.populateUser(),
     auth.restrictToAuthenticated()
   ],
-  find: [],
+  find: [getleaderboard],
   get: [],
   create: [],
   update: [],
