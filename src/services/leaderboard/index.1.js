@@ -1,16 +1,9 @@
 'use strict';
 
 const path = require('path');
-
-const mongoose = require('mongoose');
-const service = require('feathers-mongoose');
-
-// A module that exports your Mongoose model
-const Model = require('./../../models/leaderboard');
-
+const MongoClient = require('mongodb').MongoClient;
+const service = require('feathers-mongodb');
 const hooks = require('./hooks');
-
-mongoose.Promise = global.Promise;
 
 module.exports = function(){
   const app = this;
@@ -25,13 +18,10 @@ module.exports = function(){
     console.log("esle")
   }
 
-  mongoose.connect(url).then(function(db){
+  MongoClient.connect(url).then(function(db){
   // Connect to the db, create and register a Feathers service.
-  //app.use('/leaderboards', service({ Model: lb }));
-
   app.use('/leaderboards', service({
-    Model,
-    lean: true, // set to false if you want Mongoose documents returned
+    Model: db.collection('leaderboards'),
     paginate: {
       default: 50,
       max: 50

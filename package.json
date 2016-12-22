@@ -34,10 +34,12 @@
     "feathers-errors": "^2.4.0",
     "feathers-hooks": "^1.5.7",
     "feathers-mongodb": "^2.5.1",
+    "feathers-mongoose": "^3.6.1",
     "feathers-rest": "^1.5.0",
     "feathers-socketio": "^1.4.1",
     "forever": "^0.15.3",
     "mongodb": "^2.2.10",
+    "mongoose": "^4.7.4",
     "passport": "^0.3.2",
     "serve-favicon": "^2.3.0",
     "winston": "^2.2.0"

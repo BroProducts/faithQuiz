@@ -7,23 +7,23 @@
 
 const defaults = {};
 
-module.exports = function(hook) {
-  // let query = hook.params.query;
-  // console.log(hook)
-  // var args = [
-  //   { $group : {_id : "$username", scores : { $max : "$score" } } },
-  //   { $sort : { scores : -1 } },
-  //   { $limit : 5 }
-  // ];
-  // return this.Model.aggregate(args)
-      
-      
-  //       .then(data => {
-  //         hook.result = {
-  //           total: data.length || 0,
-  //           data,
-  //         };
-  //         return hook;
-  //       });
 
+module.exports = function(hook) {
+  var args = [
+    { $group : {_id : "$username", score : { $max : "$score" } }},
+    { $sort : { score : -1 } },
+    { $limit : 50}
+  ];
+
+  return this.Model.aggregate(args)
+    .then(data => {
+      console.log(data)
+      hook.result = {
+        total: data.length || 0,
+        data,
+      };
+
+      return hook;
+    });
+    
 };

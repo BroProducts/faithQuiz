@@ -8,8 +8,7 @@ app.ViewModelLeaderboard = function() {
     vm.leaderboardloaded(false);
     leaderboardService.find({
     query: {
-        $sort: { score: -1 },
-        $limit: 25
+        $sort: { score: -1 }
       }
     })
     .then(function(page) {
